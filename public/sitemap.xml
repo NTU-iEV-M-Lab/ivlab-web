@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>http://localhost:1313/ivlab-web/</loc>
   </url><url>
-    <loc>//localhost:1313/member/</loc>
+    <loc>http://localhost:1313/ivlab-web/member/</loc>
   </url><url>
-    <loc>//localhost:1313/projects/</loc>
+    <loc>http://localhost:1313/ivlab-web/projects/</loc>
   </url><url>
-    <loc>//localhost:1313/publication/</loc>
+    <loc>http://localhost:1313/ivlab-web/publication/</loc>
   </url><url>
-    <loc>//localhost:1313/research/</loc>
+    <loc>http://localhost:1313/ivlab-web/research/</loc>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/ivlab-web/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/ivlab-web/tags/</loc>
   </url><url>
-    <loc>//localhost:1313/professor/</loc>
+    <loc>http://localhost:1313/ivlab-web/professor/</loc>
   </url>
 </urlset>

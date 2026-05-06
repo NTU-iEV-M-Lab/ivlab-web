@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>指導教授 on Intelligent Vehicle &amp; Mechatronics Laboratory</title>
-    <link>//localhost:1313/professor/</link>
+    <link>http://localhost:1313/ivlab-web/professor/</link>
     <description>Recent content in 指導教授 on Intelligent Vehicle &amp; Mechatronics Laboratory</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <atom:link href="//localhost:1313/professor/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ivlab-web/professor/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
