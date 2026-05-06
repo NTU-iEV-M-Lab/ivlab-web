@@ -94,7 +94,7 @@
         
         
         
-        <img src='/images/logo-lab.png' alt="Lab Logo" class="h3 mr2">
+        <img src='/ivlab-web/images/logo-lab.png' alt="Lab Logo" class="h3 mr2">
         
         
         <span>Intelligent Vehicle &amp; Mechatronics Laboratory</span>
@@ -186,16 +186,16 @@
 <div class="w-100 w-50-l pr2-l mb3 mb0-l">
 <div class="card-carousel">
 <div class="card-track" id="dubaiSlider">
-<img src='{{ "/images/dubi_world_challenge2.jpg" | relURL }}' alt="Dubai Challenge 2023">
-<img src='{{ "/images/dubi_world_challenge1.jpg" | relURL }}' alt="Dubai Challenge 2021">
-<img src='{{ "/images/dubi2021.png" | relURL }}' alt="Team Photo">
+<img src="/ivlab-web/images/dubi_world_challenge2.jpg" alt="Dubai Challenge 2023">
+<img src="/ivlab-web/images/dubi2021.png" alt="Dubai Challenge 2021">
+<img src="/ivlab-web/images/dubi2019.png" alt="TDubai Challenge 2019">
 </div>
 <button class="card-btn c-prev" id="dPrev">&#10094;</button>
 <button class="card-btn c-next" id="dNext">&#10095;</button>
 <div class="card-dots" id="dDots"></div>
 </div>
 </div>
-<div class="w-100 w-50-l pl2-l">
+<div class="w-100 w-50-l pl2-l" style="pointer-events: none;">
 <div class="aspect-ratio aspect-ratio--16x9 br2 overflow-hidden shadow-3">
 <iframe src="https://www.youtube.com/embed/GQv2ITTWaR0?autoplay=1&mute=1&loop=1&playlist=GQv2ITTWaR0&controls=0&modestbranding=1&rel=0&playsinline=1" class="aspect-ratio--object" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
@@ -217,12 +217,12 @@
 </div>
 <!-- 下半部：兩個影片 -->
 <div class="flex flex-column flex-row-l items-center mt-auto">
-<div class="w-100 w-50-l pr2-l mb3 mb0-l">
+<div class="w-100 w-50-l pr2-l mb3 mb0-l" style="pointer-events: none;">
 <div class="aspect-ratio aspect-ratio--16x9 br2 overflow-hidden shadow-3">
 <iframe src="https://www.youtube.com/embed/j1kVTjPE8es?autoplay=1&mute=1&loop=1&playlist=j1kVTjPE8es&controls=0&modestbranding=1&rel=0&playsinline=1" class="aspect-ratio--object" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 </div>
-<div class="w-100 w-50-l pl2-l">
+<div class="w-100 w-50-l pl2-l" style="pointer-events: none;">
 <div class="aspect-ratio aspect-ratio--16x9 br2 overflow-hidden shadow-3">
 <iframe src="https://www.youtube.com/embed/lImeZVryTdc?autoplay=1&mute=1&loop=1&playlist=lImeZVryTdc&controls=0&modestbranding=1&rel=0&playsinline=1" class="aspect-ratio--object" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
@@ -245,15 +245,120 @@
 <p class="mb0"><strong>📍 實驗室位置：</strong><br>國立臺灣大學機械館 417 室</p>
 </div>
 </div>
+<!-- 2. CSS 修正區塊 -->
 <style>
-/* 輪播樣式微調確保在高字體下依然整齊 */
-.card-carousel { width: 100%; aspect-ratio: 16 / 9; position: relative; overflow: hidden; border-radius: 8px; }
-.card-track { display: flex; width: 100%; height: 100%; transition: transform 0.5s ease-in-out; }
-.card-track img { width: 100%; height: 100%; object-fit: cover; flex-shrink: 0; }
-.card-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: white; border: none; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; z-index: 10; }
-.c-dot { width: 8px; height: 8px; background: rgba(255,255,255,0.5); border-radius: 50%; cursor: pointer; margin: 0 4px; }
-.c-dot.active { background: white; }
+  .card-carousel { 
+    width: 100%; 
+    aspect-ratio: 16 / 9; 
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 8px; 
+  }
+  .card-track { 
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    transition: transform 0.5s ease-in-out; 
+  }
+  .card-track img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    flex-shrink: 0; 
+  }
+  
+  /* 按鈕通用樣式 */
+  .card-btn { 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background: rgba(0,0,0,0.5); 
+    color: white; 
+    border: none; 
+    width: 36px; 
+    height: 36px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    z-index: 100; /* 確保在最上層 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+  }
+  .card-btn:hover { background: rgba(0,0,0,0.8); }
+
+  /* 關鍵修正：左右定位 */
+  .c-prev { left: 10px; }
+  .c-next { right: 10px; }
+
+  .card-dots { 
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex; 
+    gap: 8px; 
+    z-index: 100; 
+  }
+  .c-dot { 
+    width: 8px; 
+    height: 8px; 
+    background: rgba(255,255,255,0.5); 
+    border-radius: 50%; 
+    cursor: pointer; 
+  }
+  .c-dot.active { background: white; }
 </style>
+<!-- 3. JavaScript 修正區塊 (解決按了沒反應) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.getElementById('dubaiSlider');
+  const prevBtn = document.getElementById('dPrev');
+  const nextBtn = document.getElementById('dNext');
+  const dotContainer = document.getElementById('dDots');
+
+  if (!track || !prevBtn || !nextBtn) return;
+
+  const images = track.children;
+  const imgCount = images.length;
+  let currentIndex = 0;
+
+  // 動態建立點點
+  for (let i = 0; i < imgCount; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('c-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(i));
+    dotContainer.appendChild(dot);
+  }
+
+  const dots = dotContainer.querySelectorAll('.c-dot');
+
+  function goToSlide(index) {
+    if (index < 0) index = imgCount - 1;
+    if (index >= imgCount) index = 0;
+    currentIndex = index;
+    
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    // 更新點點狀態
+    dots.forEach(d => d.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+  }
+
+  // 綁定按鈕事件
+  prevBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    goToSlide(currentIndex - 1);
+  });
+
+  nextBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    goToSlide(currentIndex + 1);
+  });
+});
+</script>
+
     </article>
     
     

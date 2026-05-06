@@ -1,19 +1,27 @@
 {{ define "header" }}
-  {{ partial "page-header.html" . }}
+{{ partial "page-header.html" . }}
 {{ end }}
 
 {{ define "main" }}
-  <!-- 直接在 HTML 鎖定最大寬度 1260px 並置中，無視任何主題 CSS 限制 -->
-  <article class="flex-l flex-wrap justify-between center ph3" style="max-width: 1260px !important; margin: 0 auto;">
-    <header class="mt4 w-100">
-      <h1 class="f1 athelas mt3 mb1">
-        {{- .Title -}}
-      </h1>
-    </header>
+<!-- 直接在 HTML 鎖定最大寬度 1260px 並置中 -->
+<article class="flex-l flex-wrap justify-between center ph3" style="max-width: 1260px !important; margin: 0 auto;">
+<header class="mt4 w-100">
+<h1 class="f1 athelas mt3 mb1">
+{{- .Title -}}
+</h1>
+</header>
 
-    <!-- 確保內文佔滿 100% 的 1260px 空間 -->
-    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes" | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} w-100">
-      {{- .Content -}}
-    </div>
-  </article>
+<!-- 內文區塊 -->
+<div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes" | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} w-100">
+{{- /* 1. 先將內容存入變數 */ -}}
+{{- $content := .Content -}}
+
+{{- /* 2. 使用正規表示式自動替換路徑 */ -}}
+{{- /* 邏輯：尋找 src="/videos/ 或 src="/images/，並補上子目錄前綴 */ -}}
+{{- $content = $content | replaceRE "src=\"/(videos|images)/" (printf "src=\"%s/$1/" ("/ivlab-web" | relURL)) -}}
+
+{{- /* 3. 輸出處理後的 HTML */ -}}
+{{- $content | safeHTML -}}
+</div>
+</article>
 {{ end }}
