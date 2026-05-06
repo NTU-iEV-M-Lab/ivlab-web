@@ -1,0 +1,39 @@
+baseURL = '/'
+languageCode = 'zh-tw'
+title = 'Intelligent Vehicle & Mechatronics Laboratory' #
+theme = 'ananke'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # 允許在 Markdown 中使用 HTML 標籤
+
+[params]
+  description = "National Taiwan University Department of Mechanical Engineering" #
+  background_color_class = "bg-black"
+  custom_css = ["css/costom.css"]
+
+[[menu.main]]
+  name = "Homepage"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Professor"
+  url = "/professor/"
+  weight = 2
+[[menu.main]]
+  name = "Member"
+  url = "/member/"
+  weight = 3
+[[menu.main]]
+  name = "Publication"
+  url = "/publication/"
+  weight = 4
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 5
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 6

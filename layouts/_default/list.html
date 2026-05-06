@@ -1,0 +1,19 @@
+{{ define "header" }}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <!-- 直接在 HTML 鎖定最大寬度 1260px 並置中，無視任何主題 CSS 限制 -->
+  <article class="flex-l flex-wrap justify-between center ph3" style="max-width: 1260px !important; margin: 0 auto;">
+    <header class="mt4 w-100">
+      <h1 class="f1 athelas mt3 mb1">
+        {{- .Title -}}
+      </h1>
+    </header>
+
+    <!-- 確保內文佔滿 100% 的 1260px 空間 -->
+    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes" | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} w-100">
+      {{- .Content -}}
+    </div>
+  </article>
+{{ end }}

@@ -1,0 +1,6 @@
+<header>
+  <!-- 直接套用全黑背景，並只載入導覽列 -->
+  <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
+    {{ partial "site-navigation.html" . }}
+  </div>
+</header>

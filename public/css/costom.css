@@ -1,0 +1,20 @@
+/* 強制將內文寬度鎖定在 1260px 並置中 */
+main article, 
+.nested-copy-line-height {
+    text-align: left !important;
+    max-width: 1260px !important; /* 你想要的 1260px */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 2rem !important;
+}
+
+/* 徹底移除 Ananke 內建的窄縮類別影響 */
+.mw8, .mw9, .w-two-thirds-l {
+    max-width: 1260px !important;
+    width: 100% !important;
+}
+
+/* 確保指導教授頁面的 Box 比例正確 */
+.flex-l > .w-50-l {
+    width: 50% !important;
+}
