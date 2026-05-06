@@ -70,10 +70,10 @@
 <!-- 2. HTML 結構 (已加入按鈕與圓點) -->
 <div class="lab-carousel">
   <div class="carousel-track" id="labSlider">
-    <img src="/images/csme_group_photo.jpg" alt="Lab Life 1">
-    <img src="/images/graduation1.jpg" alt="Lab Life 2">
-    <img src="/images/dubi_lunch.jpg" alt="Lab Life 3">
-    <img src="/images/dubi_world_challenge1.jpg" alt="Lab Life 4">
+    <img src='{{ "/images/csme_group_photo.jpg" | relURL }}' alt="Lab Life 1">
+    <img src='{{ "/images/graduation1.jpg" | relURL }}' alt="Lab Life 2">
+    <img src='{{ "/images/dubi_lunch.jpg" | relURL }}' alt="Lab Life 3">
+    <img src='{{ "/images/dubi_world_challenge1.jpg" | relURL }}' alt="Lab Life 4">
   </div>
   
   <!-- 控制按鈕 -->

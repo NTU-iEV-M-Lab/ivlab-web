@@ -26,9 +26,10 @@
 <div class="w-100 w-50-l pr2-l mb3 mb0-l">
 <div class="card-carousel">
 <div class="card-track" id="dubaiSlider">
-<img src="/images/dubi_world_challenge2.jpg" alt="Dubai Challenge 2023">
-<img src="/images/dubi_world_challenge1.jpg" alt="Dubai Challenge 2021">
-<img src="/images/dubi2021.png" alt="Team Photo">
+
+<img src='{{ "/images/dubi_world_challenge2.jpg" | relURL }}' alt="Dubai Challenge 2023">
+<img src='{{ "/images/dubi_world_challenge1.jpg" | relURL }}' alt="Dubai Challenge 2021">
+<img src='{{ "/images/dubi2021.png" | relURL }}' alt="Team Photo">
 </div>
 <button class="card-btn c-prev" id="dPrev">&#10094;</button>
 <button class="card-btn c-next" id="dNext">&#10095;</button>

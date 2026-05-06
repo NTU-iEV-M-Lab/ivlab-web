@@ -30,7 +30,7 @@ draft: false
 
 <!-- 右側：個人資料 Box (50% 寬度) -->
 <div class="w-100 w-50-l pa4 ba b--light-gray bg-white shadow-1">
-<img src="/images/KangLi.jpg" alt="李綱 教授" class="db mb3 w-100 ba b--black-10">
+<img src='{{ "/images/KangLi.jpg" | relURL }}' alt="李綱 教授" class="db mb3 w-100 ba b--black-10">
 
 <div class="f5 lh-copy">
 

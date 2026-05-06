@@ -9,7 +9,7 @@
         
         <!-- 單一 Logo：mr2 負責控制圖片右側的留白距離 -->
         <!-- 記得把 src 改成你目前使用的 logo 檔名 -->
-        <img src="/images/logo-lab.png" alt="Lab Logo" class="h3 mr2">
+        <img src='{{ "/images/logo-lab.png" | relURL }}' alt="Lab Logo" class="h3 mr2">
         
         <!-- 實驗室名稱 -->
         <span>{{ .Site.Title }}</span>

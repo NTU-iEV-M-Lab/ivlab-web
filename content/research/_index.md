@@ -50,7 +50,7 @@
 <div style="width: 48%;">
 <div class="bg-near-white br2 overflow-hidden shadow-4 ba b--black-05" style="aspect-ratio: 16/9;">
 <video style="width: 100%; height: 100%; object-fit: cover;" autoplay loop muted playsinline>
-<source src="/videos/carsim1.mp4" type="video/mp4">
+<source src='{{ "/videos/carsim1.mp4" | relURL }}' type="video/mp4">
 </video>
 </div>
 <!-- 說明文字放大至 f3 -->
@@ -60,7 +60,7 @@
 <div style="width: 48%;">
 <div class="bg-near-white br2 overflow-hidden shadow-4 ba b--black-05" style="aspect-ratio: 16/9;">
 <video style="width: 100%; height: 100%; object-fit: cover;" autoplay loop muted playsinline>
-<source src="/videos/carsim2.mp4" type="video/mp4">
+<source src='{{ "/videos/carsim2.mp4" | relURL }}' type="video/mp4">
 </video>
 </div>
 <p class="f4 mt2 mb0 dark-gray fw6 tc">高速軌跡跟蹤控制系統 (II)</p>
@@ -72,7 +72,7 @@
 <!-- 更改這裡的 height: 400px; 即可自由調整高度 -->
 <div class="bg-near-white br2 overflow-hidden shadow-4 ba b--black-05" style="height: 300px;">
 <video style="width: 100%; height: 100%; object-fit: cover;" autoplay loop muted playsinline>
-<source src="/videos/routing.mp4" type="video/mp4">
+<source src='{{ "/videos/routing.mp4" | relURL }}' type="video/mp4">
 </video>
 </div>
 <p class="f4 mt2 mb0 dark-gray fw6 tc">多載具動態路徑規劃</p>
@@ -83,7 +83,7 @@
 <!-- 更改這裡的 height: 400px; 即可自由調整高度 -->
 <div class="bg-near-white br2 overflow-hidden shadow-4 ba b--black-05" style="height: 300px;">
 <video style="width: 100%; height: 100%; object-fit: cover;" autoplay loop muted playsinline>
-<source src="/videos/carla.mp4" type="video/mp4">
+<source src='{{ "/videos/carla.mp4" | relURL }}' type="video/mp4">
 </video>
 </div>
 <p class="f4 mt2 mb0 dark-gray fw6 tc">CARLA & SUMO車流模擬</p>
