@@ -1,7 +1,7 @@
 baseURL = 'https://ntu-iev-m-lab.github.io/ivlab-web/'
 
 languageCode = 'zh-tw'
-title = 'Intelligent Vehicle & Mechatronics Laboratory' #
+title = '國立臺灣大學 智慧載具與機電整合實驗室' #
 theme = 'ananke'
 
 [markup]
@@ -16,26 +16,26 @@ theme = 'ananke'
   favicon = "/ivlab-web/images/logo-lab.ico"
 
 [[menu.main]]
-  name = "Homepage"
+  name = "主頁"
   url = "/"
   weight = 1
 [[menu.main]]
-  name = "Professor"
+  name = "指導教授"
   url = "/professor/"
   weight = 2
 [[menu.main]]
-  name = "Member"
+  name = "實驗室成員"
   url = "/member/"
   weight = 3
 [[menu.main]]
-  name = "Publication"
+  name = "發表文章"
   url = "/publication/"
   weight = 4
 [[menu.main]]
-  name = "Research"
+  name = "研究方向"
   url = "/research/"
   weight = 5
 [[menu.main]]
-  name = "Projects"
+  name = "執行中計畫與專案"
   url = "/projects/"
   weight = 6

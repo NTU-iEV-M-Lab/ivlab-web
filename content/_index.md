@@ -82,7 +82,7 @@
 <div class="w-100 w-50-l lh-copy f4">
 <p class="mb3 mt0"><strong>指導教授：</strong> 李綱 教授 (Prof. Kang Li)</p>
 <p class="mb3"><strong>📧 電子信箱：</strong> <a href="mailto:kangli@ntu.edu.tw" class="link blue hover-dark-blue">kangli@ntu.edu.tw</a></p>
-<p class="mb0"><strong>📞 聯絡電話：</strong> +886 02-3366-4516</p>
+<p class="mb0"><strong>📞 聯絡電話：</strong> +886 2-3366-4516</p>
 </div>
 
 <!-- 右欄：實體位置 (放大至 f4) -->

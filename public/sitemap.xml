@@ -6,6 +6,8 @@
   </url><url>
     <loc>http://localhost:1313/ivlab-web/member/</loc>
   </url><url>
+    <loc>http://localhost:1313/ivlab-web/professor/</loc>
+  </url><url>
     <loc>http://localhost:1313/ivlab-web/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/ivlab-web/publication/</loc>
@@ -15,7 +17,5 @@
     <loc>http://localhost:1313/ivlab-web/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/ivlab-web/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/ivlab-web/professor/</loc>
   </url>
 </urlset>

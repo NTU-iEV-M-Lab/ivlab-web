@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Intelligent Vehicle &amp; Mechatronics Laboratory</title>
+    <title>國立臺灣大學 智慧載具與機電整合實驗室</title>
     <link>http://localhost:1313/ivlab-web/professor/</link>
-    <description>Recent content on Intelligent Vehicle &amp; Mechatronics Laboratory</description>
+    <description>Recent content on 國立臺灣大學 智慧載具與機電整合實驗室</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <atom:link href="http://localhost:1313/ivlab-web/professor/index.xml" rel="self" type="application/rss+xml" />
