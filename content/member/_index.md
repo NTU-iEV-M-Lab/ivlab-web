@@ -1,4 +1,3 @@
-<!-- 1. 輪播容器與按鈕的 CSS 樣式 -->
 <style>
   .lab-carousel {
     width: 100%;
@@ -67,7 +66,6 @@
   .dot.active { background-color: white; }
 </style>
 
-<!-- 2. HTML 結構 (已加入按鈕與圓點) -->
 <div class="lab-carousel">
   <div class="carousel-track" id="labSlider">
     <img src="/images/csme_group_photo.jpg" alt="Lab Life 1">
@@ -76,13 +74,11 @@
     <img src="/images/dubi_world_challenge1.jpg" alt="Lab Life 4">
   </div>
   
-  <!-- 控制按鈕 -->
   <button class="carousel-btn prev-btn" id="prevBtn">&#10094;</button>
   <button class="carousel-btn next-btn" id="nextBtn">&#10095;</button>
   <div class="carousel-dots" id="dotContainer"></div>
 </div>
 
-<!-- 3. 純手動 JavaScript 邏輯 (已徹底刪除自動播放) -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const track = document.getElementById('labSlider');
@@ -126,41 +122,49 @@
   });
 </script>
 
-<!-- 【關鍵這行】：啟動左右並排的 Flex 容器 -->
-<div class="flex-l items-start">
+<h3 class="f3 mt5 mb4 pb2 bb b--light-gray dark-gray">實驗室成員</h3>
+<div class="flex flex-wrap justify-between">
+  
+  <div class="w-100 w-30-l mb4">
+    <div class="bg-white br3 ba b--black-10 shadow-1 pa4 h-100">
+      <h4 class="f4 mt0 mb3 dark-blue bb b--black-10 pb2">博士生</h4>
+      <ul class="list pl3 lh-copy f5 dark-gray">
+        <li class="mb2" style="list-style-type: circle;">陳軼　</li>
+        <li class="mb2" style="list-style-type: circle;">曾靖雅</li>
+        <li class="mb2" style="list-style-type: circle;">胡聰賢</li>
+        <li class="mb2" style="list-style-type: circle;">蔡育伸</li>
+      </ul>
+    </div>
+  </div>
 
-<!-- 左側欄位：研究助理與博士生 (佔 50% 寬度) -->
-<div class="w-100 w-50-l pr4-l">
+  <div class="w-100 w-30-l mb4">
+    <div class="bg-white br3 ba b--black-10 shadow-1 pa4 h-100">
+      <h4 class="f4 mt0 mb3 dark-green bb b--black-10 pb2">碩士生</h4>
+      <div class="flex">
+        <ul class="list pl3 lh-copy f5 dark-gray w-50">
+          <li class="mb2" style="list-style-type: circle;">李彥霆</li>
+          <li class="mb2" style="list-style-type: circle;">吳星融</li>
+          <li class="mb2" style="list-style-type: circle;">林郁倫</li>
+          <li class="mb2" style="list-style-type: circle;">張祐誠</li>
+        </ul>
+        <ul class="list pl3 lh-copy f5 dark-gray w-50">
+          <li class="mb2" style="list-style-type: circle;">周冠翰</li>
+          <li class="mb2" style="list-style-type: circle;">蔡翔羽</li>
+          <li class="mb2" style="list-style-type: circle;">曾志榮</li>
+          <li class="mb2" style="list-style-type: circle;">方健丞</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-## 研究助理
+  <div class="w-100 w-30-l mb4">
+    <div class="bg-white br3 ba b--black-10 shadow-1 pa4 h-100">
+      <h4 class="f4 mt0 mb3 dark-red bb b--black-10 pb2">研究助理</h4>
+      <ul class="list pl3 lh-copy f5 dark-gray">
+        <li class="mb2" style="list-style-type: circle;">黃志峰</li>
+        <li class="mb2" style="list-style-type: circle;">黃曜駿</li>
+      </ul>
+    </div>
+  </div>
 
-*   黃志峰: Email: [chihfeng0302@ntu.edu.tw](mailto:chihfeng0302@ntu.edu.tw)
-*   黃曜駿: Email: [yaojiunhuang@ntu.edu.tw](mailto:yaojiunhuang@ntu.edu.tw)
-
-## 博士生
-
-*   陳軼: Email: [r07522845@ntu.edu.tw](mailto:r07522845@ntu.edu.tw),
-*   曾靖雅: Email: [luisaariel24@gmail.com](mailto:luisaariel24@gmail.com),
-*   胡聰賢: Email: [d14522012@ntu.edu.tw](mailto:d14522012@ntu.edu.tw),
-
-</div>
-
-
-<!-- 右側欄位：碩士生 (佔 50% 寬度) -->
-<div class="w-100 w-50-l">
-
-## 碩士生
-
-*   李彥霆: Email: [tin35611@gmail.com](mailto:tin35611@gmail.com), 碩三
-*   吳星融: Email: [a84677a51@gmail.com](mailto:a84677a51@gmail.com), 碩三
-*   林郁倫: Email: [hn74191@gmail.com](mailto:hn74191@gmail.com), 碩二
-*   張祐誠: Email: [george910103@gmail.com](mailto:george910103@gmail.com), 碩二
-*   周冠翰: Email: [jay901105@icloud.com](mailto:jay901105@icloud.com), 碩二
-*   蔡翔羽: Email: [asd30627@gmail.com](mailto:asd30627@gmail.com), 碩二
-*   曾志榮: Email: [qwer8642@yahoo.com.tw](mailto:qwer8642@yahoo.com.tw), 碩二
-*   方健丞: Email: [r14522852@ntu.edu.tw](mailto:r14522852@ntu.edu.tw), 碩一
-
-</div>
-
-<!-- 結束 Flex 容器 -->
 </div>

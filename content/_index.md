@@ -14,10 +14,10 @@
 </p>
 
 <ul class="pl3 f5 lh-copy mb4">
-<li class="mb2"><a href="https://tw.news.yahoo.com/..." target="_blank" class="link blue hover-dark-blue">2023 杜拜自動駕駛挑戰賽賽程與成果報導</a></li>
+<li class="mb2"><a href="https://www.me.ntu.edu.tw/epaper/20231231/News_Photo_Content_n_44379_s_221318.html" target="_blank" class="link blue hover-dark-blue">2023 杜拜自動駕駛挑戰賽賽程與成果報導</a></li>
 <li class="mb2"><a href="https://www.iauto-tech.com/?p=1938" target="_blank" class="link blue hover-dark-blue">2021 杜拜自動駕駛挑戰賽賽程與成果報導</a></li>
 <li class="mb2"><a href="https://www.ettoday.net/news/20191019/1560487.htm" target="_blank" class="link blue hover-dark-blue">2019 臺灣團隊榮獲新創組亞軍報導</a></li>
-<li class="mb2"><a href="https://www.me.ntu.edu.tw/..." target="_blank" class="link blue hover-dark-blue">2019 杜拜挑戰賽台大校內報導</a></li>
+<li class="mb2"><a href="https://www.me.ntu.edu.tw/epaper/20200331/News_Photo_Content_n_44369_s_62088.html" target="_blank" class="link blue hover-dark-blue">2019 杜拜挑戰賽台大校內報導</a></li>
 </ul>
 </div>
 
@@ -54,7 +54,7 @@
 智慧車輛與機電整合實驗室開發之自主移動機器人（AMR）NTU EAT，整合多感測器融合定位與動態避障演算法。實現室內外環境的無縫導航，並透過物聯網技術與智慧電梯系統對接，完成自動進出電梯與跨樓層垂直配送任務。該系統已於台大社科院、台北花博公園等地進行多次實地運行測試，驗證從訂餐至取餐的全自動化流程。
 </p>
 <ul class="pl3 f5 lh-copy mb4">
-<li class="mb2"><a href="http://sub.eng.ntu.edu.tw/..." target="_blank" class="link blue hover-dark-blue">NTUEAT 台大校園無人送餐實測新聞報導</a></li>
+<li class="mb2"><a href="https://www.eng.ntu.edu.tw/TC/news_in.aspx?id=2199&chk=3d8ab894-2ace-4052-8c2f-2da1c02bdcbd&mid=9&cid=81&param=pn%3D7%26mid%3D9%26cid%3D81%26key%3D" target="_blank" class="link blue hover-dark-blue">NTUEAT 台大校園無人送餐實測新聞報導</a></li>
 </ul>
 </div>
 

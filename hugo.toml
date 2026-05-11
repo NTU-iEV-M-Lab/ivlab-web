@@ -13,6 +13,7 @@ theme = 'ananke'
   description = "National Taiwan University Department of Mechanical Engineering" #
   background_color_class = "bg-black"
   custom_css = ["css/costom.css"]
+  favicon = "/ivlab-web/images/logo-lab.ico"
 
 [[menu.main]]
   name = "Homepage"
