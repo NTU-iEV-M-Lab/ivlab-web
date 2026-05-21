@@ -34,11 +34,11 @@
           <li class="mb2" style="list-style-type: circle;">Yan-Ting Li</li>
           <li class="mb2" style="list-style-type: circle;">Xing-Rong Wu</li>
           <li class="mb2" style="list-style-type: circle;">Yu-Lun Lin</li>
-          <li class="mb2" style="list-style-type: circle;">You-Cheng Zhang</li>
+          <li class="mb2" style="list-style-type: circle;">Yu-Cheng Chang</li>
         </ul>
         <ul class="list pl3 lh-copy f5 dark-gray w-50">
           <li class="mb2" style="list-style-type: circle;">Guan-Han Zhou</li>
-          <li class="mb2" style="list-style-type: circle;">Xiang-Yu Cai</li>
+          <li class="mb2" style="list-style-type: circle;">Hsiang-Yu Tsai</li>
           <li class="mb2" style="list-style-type: circle;">Zhi-Rong Zeng</li>
           <li class="mb2" style="list-style-type: circle;">Jian-Cheng Fang</li>
         </ul>
@@ -51,7 +51,7 @@
       <h4 class="f4 mt0 mb3 dark-red bb b--black-10 pb2">Research Assistants</h4>
       <ul class="list pl3 lh-copy f5 dark-gray">
         <li class="mb2" style="list-style-type: circle;">Zhi-Feng Huang</li>
-        <li class="mb2" style="list-style-type: circle;">Yao-Jun Huang</li>
+        <li class="mb2" style="list-style-type: circle;">Yao-Jiun Huang</li>
       </ul>
     </div>
   </div>
