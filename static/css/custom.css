@@ -1,0 +1,170 @@
+/* ── Layout: content width ───────────────────────────────────────── */
+/* !important is required here to override Ananke's Tachyons classes
+   (w-two-thirds-l, mw8, mw9) which would otherwise constrain content
+   to ~66% width. max-width does not cause mobile overflow — it just
+   sets the ceiling. Mobile overflow was caused by hardcoded style= widths
+   in content files (fixed separately). */
+main article,
+.nested-copy-line-height {
+  text-align: left !important;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.mw8, .mw9, .w-two-thirds-l {
+  max-width: 1400px !important;
+  width: 100% !important;
+}
+
+/* Ensure the professor page box proportions are correct */
+.flex-l > .w-50-l {
+  width: 50%;
+}
+
+/* ── Responsive utilities ───────────────────────────────────────── */
+/* w-48-l: 48% width on large screens (≥60em), full width below */
+@media screen and (min-width: 60em) {
+  .w-48-l { width: 48%; }
+}
+
+/* ── Lab photo carousel (member page) ───────────────────────────── */
+.lab-carousel {
+  width: 100%;
+  max-width: 1000px;
+  height: 550px;
+  margin: 0 auto 3rem auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 60em) {
+  .lab-carousel { height: 260px; }
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover { background-color: rgba(0, 0, 0, 0.8); }
+.prev-btn { left: 15px; }
+.next-btn { right: 15px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active { background-color: white; }
+
+/* ── Homepage Dubai carousel ─────────────────────────────────────── */
+.card-carousel {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.card-btn:hover { background: rgba(0, 0, 0, 0.8); }
+
+.c-prev { left: 10px; }
+.c-next { right: 10px; }
+
+.card-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 100;
+}
+
+.c-dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.c-dot.active { background: white; }

@@ -1,0 +1,4 @@
+- id: readmore
+  translation: "閱讀更多"
+- id: pageTitle
+  translation: "{{ .Name }}"

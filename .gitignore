@@ -1,0 +1,24 @@
+# Hugo build output (built by GitHub Actions, not committed)
+public/
+.hugo_build.lock
+resources/
+
+# OpenSpec change management (local tooling only)
+openspec/
+
+# Claude Code & agent local config
+.claude/
+.agent/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if ever added)
+node_modules/

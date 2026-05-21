@@ -1,41 +1,79 @@
 baseURL = 'https://ntu-iev-m-lab.github.io/ivlab-web/'
 
-languageCode = 'zh-tw'
-title = '國立臺灣大學 智慧載具與機電整合實驗室' #
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
 theme = 'ananke'
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # 允許在 Markdown 中使用 HTML 標籤
+      unsafe = true
 
 [params]
-  description = "National Taiwan University Department of Mechanical Engineering" #
+  description = "National Taiwan University Department of Mechanical Engineering"
   background_color_class = "bg-black"
-  custom_css = ["css/costom.css"]
+  custom_css = ["css/custom.css"]
   favicon = "/ivlab-web/images/logo-lab.ico"
 
-[[menu.main]]
-  name = "主頁"
-  url = "/"
-  weight = 1
-[[menu.main]]
-  name = "指導教授"
-  url = "/professor/"
-  weight = 2
-[[menu.main]]
-  name = "實驗室成員"
-  url = "/member/"
-  weight = 3
-[[menu.main]]
-  name = "發表文章"
-  url = "/publication/"
-  weight = 4
-[[menu.main]]
-  name = "研究方向"
-  url = "/research/"
-  weight = 5
-[[menu.main]]
-  name = "執行中計畫與專案"
-  url = "/projects/"
-  weight = 6
+[languages]
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh-tw"
+    weight = 1
+    title = "國立臺灣大學 智慧載具與機電整合實驗室"
+
+    [[languages.zh.menus.main]]
+      name = "主頁"
+      url = "/"
+      weight = 1
+    [[languages.zh.menus.main]]
+      name = "指導教授"
+      url = "/professor/"
+      weight = 2
+    [[languages.zh.menus.main]]
+      name = "實驗室成員"
+      url = "/member/"
+      weight = 3
+    [[languages.zh.menus.main]]
+      name = "發表文章"
+      url = "/publication/"
+      weight = 4
+    [[languages.zh.menus.main]]
+      name = "研究方向"
+      url = "/research/"
+      weight = 5
+    [[languages.zh.menus.main]]
+      name = "執行中計畫與專案"
+      url = "/projects/"
+      weight = 6
+
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 2
+    title = "NTU Intelligent Vehicle and Mechatronics Laboratory"
+
+    [[languages.en.menus.main]]
+      name = "Home"
+      pageRef = "/"
+      weight = 1
+    [[languages.en.menus.main]]
+      name = "Professor"
+      pageRef = "professor"
+      weight = 2
+    [[languages.en.menus.main]]
+      name = "Members"
+      pageRef = "member"
+      weight = 3
+    [[languages.en.menus.main]]
+      name = "Publications"
+      pageRef = "publication"
+      weight = 4
+    [[languages.en.menus.main]]
+      name = "Research"
+      pageRef = "research"
+      weight = 5
+    [[languages.en.menus.main]]
+      name = "Projects"
+      pageRef = "projects"
+      weight = 6
