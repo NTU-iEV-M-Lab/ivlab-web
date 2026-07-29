@@ -33,8 +33,8 @@
         <ul class="list pl3 lh-copy f5 dark-gray w-50">
           <li class="mb2" style="list-style-type: circle;">李彥霆</li>
           <li class="mb2" style="list-style-type: circle;">吳星融</li>
-          <li class="mb2" style="list-style-type: circle;">林郁倫</li>
           <li class="mb2" style="list-style-type: circle;">張祐誠</li>
+          <li class="mb2" style="list-style-type: circle;">林郁倫</li>
         </ul>
         <ul class="list pl3 lh-copy f5 dark-gray w-50">
           <li class="mb2" style="list-style-type: circle;">周冠翰</li>

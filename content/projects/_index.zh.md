@@ -19,6 +19,14 @@
 </div>
 </article>
 
+<article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--blue shadow-4">
+<h3 class="f3 fw6 mt0 mb3 dark-gray">SDN 驅動之無人機群體控制 – SIL / HIL 模擬平台架構設計與網路控制效能驗證</h3>
+<div class="lh-copy f5 black-70 mt3">
+<strong class="dark-blue f5">計畫概述：</strong><br>
+開發具備「深度環境理解」與「決策思維」的智慧大腦，使單一操作者能直覺指揮複雜機群。透過 SAVLink 語意層通信協定，將自然口語精準轉譯為邏輯指令，極大化頻寬運用效率並提升干擾環境下的存活率；並結合 SIL 和 HIL 進行無人機群任務與網路控制之模擬平台架設和驗證。
+</div>
+</article>
+
 
 <!-- 2. 其他計畫 -->
 <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">📋 其他執行中計畫</h2>
@@ -33,7 +41,7 @@
 
 
 <!-- 3. 合作專案 -->
-<h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-green">🤝 合作專案</h2>
+<!-- <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-green">🤝 合作專案</h2>
 
 <article class="w-100 bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--green shadow-4">
 <h3 class="f3 fw6 mt0 mb3 dark-gray">異質無人載具群控語意通信系統計畫</h3>
@@ -41,7 +49,7 @@
 <strong class="dark-green f5">計畫概述：</strong><br>
 開發具備「深度環境理解」與「決策思維」的智慧大腦，使單一操作者能直覺指揮複雜機群。透過 SAVLink 語意層通信協定，將自然口語精準轉譯為邏輯指令，極大化頻寬運用效率並提升干擾環境下的存活率。
 </div>
-</article>
+</article> -->
 
 
 <!-- 4. 國際合作 -->
