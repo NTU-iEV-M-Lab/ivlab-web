@@ -20,6 +20,7 @@
 
 ## International Conference Papers
 
+1. M. -F. Li, Y. -J. Huang, K. -H. Chou, C. -C. Fang and K. Li, "A Sequential Constructive Reinforcement Learning Approach to Heterogeneous and Dynamic Multi-Vehicle Routing," 2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), Genova, Italy, 2026, pp. 1-9, doi: 10.1109/AIM65483.2026.11658327.
 1. Cheng, Z. J., Jeng, L. W., & Li, K. (2018, November). Behavioral classification of drivers for driving efficiency related ADAS using artificial neural network. In 2018 IEEE International Conference on Advanced Manufacturing (ICAM) (pp. 173-176). IEEE.
 2. F.-C. Chou, K. Li, L.-W. Jeng, and C.-H. Li, Model Predictive Control based Optimal Torque Distribution Strategy for a Compound Electric Vehicle, Proceedings of the 2013 CACS International Automatic Control Conference, Sun Moon Lake, Nantou, Taiwan, 2013.
 3. C.-H. Lin, J.-H. Cheng, and C.-Y. Lin, T. Y. Yang, K. Li, J. Y. Lin, and Y. Li, Development of Nonlinear Control Algorithms for Shaking Table Tests, Proceedings of the ASME 6th Annual Dynamic Systems and Control Conference, Stanford University, Palo Alto, CA, U.S.A, 2013.
