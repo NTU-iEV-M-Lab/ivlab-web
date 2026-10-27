@@ -39,6 +39,14 @@ This project aims to enhance the design, modeling, and testing capabilities of h
 </div>
 </article>
 
+<article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--gray shadow-4">
+<h3 class="f3 fw6 mt0 mb3 dark-gray">Development of Ground Dynamic Testing and Simulated Flight Validation Technologies for Large Unmanned Helicopters</h3>
+<div class="lh-copy f5 black-70 mt3">
+<strong class="dark-gray f5">Project Overview:</strong><br>
+This project aims to develop ground dynamic testing and simulated flight validation technologies for large unmanned helicopters. It integrates powertrain measurements, vibration analysis, flight control, and Hardware-in-the-Loop (HIL) simulation to establish a framework for evaluating overall system performance and safety. Through ground operation tests and simulated flight scenarios, the project assesses system behavior and control responses, reduces risks associated with actual flight testing, and enhances the reliability and flight safety of large unmanned helicopters.
+</div>
+</article>
+
 
 <!-- 3. Collaborative Projects -->
 <!-- <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-green">🤝 Collaborative Projects</h2>

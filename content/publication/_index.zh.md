@@ -3,6 +3,7 @@
 
 ## Journal Papers 期刊論文
 
+1. Huang, C. F., & Li, K. (2026). Balancing Tracking and Stability in High-Dynamic Path-Following of 4WD Autonomous Vehicles via MPC With Dynamic Weighting and Slip-Ratio-Constrained Torque Allocation. IEEE Transactions on Control Systems Technology.
 1. Huang, Y. J., & Li, K. (2025). Improved Visibility for Monocular Camera-based Perception in Autonomous Driving Systems under Rain with Fog: An Efficient Vision Transformer Approach. Expert Systems with Applications, 130661.
 2. Chen, Y., Huang, Y. J., & Li, K. (2025). Modeling of steer-by-wire control systems taking into account of nonlinearities in steering mechanism and model-in-the-loop simulation studies. Journal of the Chinese Institute of Engineers, 1-17.
 3. Yang, S. C., Hsu, Y. L., Chou, P. H., Hsu, C. C., Chen, G. R., & Li, K. (2018). Fault detection and tolerant capability of parallel-connected permanent magnet machines under stator turn fault. IEEE Transactions on Industry Applications, 54(5), 4447-4456.

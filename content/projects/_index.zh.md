@@ -39,6 +39,14 @@
 </div>
 </article>
 
+<article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--gray shadow-4">
+<h3 class="f3 fw6 mt0 mb3 dark-gray">大型無人直升機地面動態測試與模擬飛行驗證技術開發</h3>
+<div class="lh-copy f5 black-70 mt3">
+<strong class="dark-gray f5">計畫概述：</strong><br>
+本計畫旨在開發大型無人直升機地面動態測試與模擬飛行驗證技術，整合動力傳動量測、振動分析、飛行控制與硬體迴路模擬（HIL），建立整機性能與安全性驗證機制。透過地面運轉測試及模擬飛行情境，評估系統運作特性與控制反應，降低實際飛行測試風險，提升大型無人直升機之研發可靠性與飛行安全。
+</div>
+</article>
+
 
 <!-- 3. 合作專案 -->
 <!-- <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-green">🤝 合作專案</h2>
