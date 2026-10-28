@@ -2,3 +2,22 @@
   translation: "Read more"
 - id: pageTitle
   translation: "{{ .Name }}"
+- id: menuToggle
+  translation: "Open or close menu"
+- id: mainNavigation
+  translation: "Main navigation"
+- id: languageNavigation
+  translation: "Switch language"
+- id: skipToContent
+  translation: "Skip to main content"
+- id: previousSlide
+  translation: "Previous photo"
+- id: nextSlide
+  translation: "Next photo"
+- id: slideLabel
+  translation: "Show photo"
+- id: researchVideo
+  translation: "Research video"
+
+- id: pageNavigation
+  translation: "On this page"

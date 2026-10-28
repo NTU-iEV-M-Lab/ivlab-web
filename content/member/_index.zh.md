@@ -1,5 +1,6 @@
 <div class="lab-carousel">
   <div class="carousel-track" id="labSlider">
+    <img src="/images/hackathon_group_photo.jpg" alt="黑客松團隊合照">
     <img src="/images/csme_group_photo.jpg" alt="Lab Life 1">
     <img src="/images/graduation1.jpg" alt="Lab Life 2">
     <img src="/images/dubi_lunch.jpg" alt="Lab Life 3">

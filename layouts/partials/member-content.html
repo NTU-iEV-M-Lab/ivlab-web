@@ -1,0 +1,50 @@
+{{- /* Adapt only presentation. Fall back to source markup if any text is unaccounted for. */ -}}
+{{- $content := . -}}
+{{- $parts := split $content `<div class="w-100 w-30-l mb4">` -}}
+{{- if eq (len $parts) 4 -}}
+  {{- $prefix := index $parts 0 -}}
+  {{- $galleries := findRE `<div class="lab-carousel">[\s\S]*?<div class="carousel-dots" id="dotContainer"></div>\s*</div>` $prefix -}}
+  {{- $labels := findRE `<h3[^>]*>[\s\S]*?</h3>` $prefix -}}
+  {{- $valid := and (eq (len $galleries) 1) (eq (len $labels) 1) -}}
+  {{- $groups := "" -}}
+  {{- range after 1 $parts -}}
+    {{- $headings := findRE `<h4[^>]*>[\s\S]*?</h4>` . -}}
+    {{- $members := findRE `<li[^>]*>[\s\S]*?</li>` . -}}
+    {{- if and (eq (len $headings) 1) (gt (len $members) 0) -}}
+      {{- $heading := index $headings 0 -}}
+      {{- $entries := delimit $members "" -}}
+      {{- $oldText := replaceRE `\s+` "" (plainify .) -}}
+      {{- $newText := replaceRE `\s+` "" (plainify (printf "%s%s" $heading $entries)) -}}
+      {{- if ne $oldText $newText -}}{{- $valid = false -}}{{- end -}}
+      {{- $heading = replace (replace $heading "<h4" "<h3") "</h4>" "</h3>" -}}
+      {{- $groups = printf "%s<section class=\"people-group\">%s<ul class=\"people-grid\">%s</ul></section>" $groups $heading $entries -}}
+    {{- else -}}{{- $valid = false -}}{{- end -}}
+  {{- end -}}
+  {{- if $valid -}}
+    {{- $gallery := index $galleries 0 -}}
+    {{- $label := index $labels 0 -}}
+    {{- if eq (replaceRE `\s+` "" (plainify $prefix)) (replaceRE `\s+` "" (plainify (printf "%s%s" $gallery $label))) -}}
+      {{- $label = replace (replace $label "<h3" "<h2") "</h3>" "</h2>" -}}
+      {{- /* Render gallery navigation up front so initialization cannot move the roster/footer. */ -}}
+      {{- $dots := "" -}}
+      {{- $thumbnails := "" -}}
+      {{- $images := findRE `<img\s[^>]+>` $gallery -}}
+      {{- $firstCaption := "" -}}
+      {{- range $index, $image := $images -}}
+        {{- $alt := replaceRE `^.*?\salt="([^"]*)".*$` "$1" $image -}}
+        {{- if eq $index 0 -}}{{- $firstCaption = htmlEscape $alt -}}{{- end -}}
+        {{- $slideLabel := htmlEscape (printf "%s %d: %s" (i18n "slideLabel") (add $index 1) $alt) -}}
+        {{- $active := eq $index 0 -}}
+        {{- $dotClass := "dot" -}}
+        {{- if $active -}}{{- $dotClass = "dot active" -}}{{- end -}}
+        {{- $dots = printf `%s<button class="%s" type="button" aria-label="%s" aria-controls="labSlider" aria-current="%t"></button>` $dots $dotClass $slideLabel $active -}}
+        {{- $thumbnail := replaceRE `\salt="[^"]*"` ` alt=""` $image -}}
+        {{- $thumbnails = printf `%s<button class="gallery-thumbnail" type="button" aria-label="%s" aria-controls="labSlider" aria-current="%t">%s</button>` $thumbnails $slideLabel $active $thumbnail -}}
+      {{- end -}}
+      {{- $gallery = replace $gallery `<div class="carousel-dots" id="dotContainer"></div>` (printf `<div class="carousel-dots" id="dotContainer">%s</div>` $dots) -}}
+      {{- $meta := printf `<div class="gallery-meta" aria-hidden="true"><span class="gallery-caption">%s</span><span class="gallery-index">01 / %02d</span></div>` $firstCaption (len $images) -}}
+      {{- $content = printf `<div class="member-layout"><div class="member-visual">%s%s<div class="gallery-thumbnails">%s</div></div><div class="member-roster">%s<div class="people-groups">%s</div></div></div>` $gallery $meta $thumbnails $label $groups -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $content -}}

@@ -1,0 +1,12 @@
+{{- $title := .Title -}}
+{{- if .IsHome -}}
+  {{- $title = .Site.Title -}}
+{{- else if not $title -}}
+  {{- $page := . -}}
+  {{- range .Site.Menus.main -}}
+    {{- if or ($page.IsMenuCurrent "main" .) (eq .URL $page.RelPermalink) -}}
+      {{- $title = .Name -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $title -}}

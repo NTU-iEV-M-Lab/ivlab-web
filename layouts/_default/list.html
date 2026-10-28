@@ -1,27 +1,39 @@
-{{ define "header" }}
-{{ partial "page-header.html" . }}
-{{ end }}
-
 {{ define "main" }}
-<!-- 直接在 HTML 鎖定最大寬度 1260px 並置中 -->
-<article class="flex-l flex-wrap justify-between center ph3" style="max-width: 1260px !important; margin: 0 auto; padding-top: 5rem;">
-<header class="mt4 w-100">
-<h1 class="f1 athelas mt3 mb1">
-{{- .Title -}}
-</h1>
-</header>
-
-<!-- 內文區塊 -->
-<div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes" | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} w-100">
-{{- /* 1. 先將內容存入變數 */ -}}
-{{- $content := .Content -}}
-
-{{- /* 2. 使用正規表示式自動替換路徑 */ -}}
-{{- /* 邏輯：尋找 src="/videos/ 或 src="/images/，並補上子目錄前綴 */ -}}
-{{- $content = $content | replaceRE "src=\"/(videos|images)/" (printf "src=\"%s/$1/" ("/ivlab-web" | relURL)) -}}
-
-{{- /* 3. 輸出處理後的 HTML */ -}}
-{{- $content | safeHTML -}}
-</div>
+<section class="page-heading">
+  <div class="site-container">
+    <div class="breadcrumb">
+      {{- range first 1 .Site.Menus.main -}}<a href="{{ $.Site.Home.RelPermalink }}">{{ .Name }}</a>{{- end -}}
+      <span aria-hidden="true">/</span><span>{{ partial "page-title.html" . }}</span>
+    </div>
+    <h1>{{ partial "page-title.html" . }}</h1>
+    <div class="heading-rule" aria-hidden="true"></div>
+  </div>
+</section>
+{{- $content := partial "render-content.html" . -}}
+{{- $sections := slice -}}
+{{- if in (slice "publication" "projects") .Section -}}
+  {{- /* Commented-out source sections are not part of the visible page or its index. */ -}}
+  {{- $visibleMarkup := replaceRE `<!--[\s\S]*?-->` "" $content -}}
+  {{- $headings := findRE `<h2\b[^>]*>[\s\S]*?</h2>` $visibleMarkup -}}
+  {{- if gt (len $headings) 1 -}}
+    {{- range $index, $heading := $headings -}}
+      {{- $id := printf "section-%d" (add $index 1) -}}
+      {{- $existingID := findRE `\sid="[^"]+"` $heading 1 -}}
+      {{- if $existingID -}}
+        {{- $id = replaceRE `^\sid="([^"]+)"$` "$1" (index $existingID 0) -}}
+      {{- else -}}
+        {{- $content = replace $content $heading (replaceRE `^<h2` (printf `<h2 id="%s"` $id) $heading) -}}
+      {{- end -}}
+      {{- $sections = $sections | append (dict "id" $id "label" (plainify $heading)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<article class="site-container page-shell{{ if $sections }} has-toc{{ end }}">
+  {{- if $sections -}}
+  <nav class="page-toc" aria-label="{{ i18n "pageNavigation" }}">
+    {{- range $sections -}}<a href="#{{ .id }}">{{ .label }}</a>{{- end -}}
+  </nav>
+  {{- end -}}
+  <div class="page-content">{{ $content | safeHTML }}</div>
 </article>
 {{ end }}

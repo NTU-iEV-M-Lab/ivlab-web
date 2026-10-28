@@ -1,0 +1,46 @@
+{{- /* Preserve all source content; normalize local media paths and presentation attributes. */ -}}
+{{- $content := .Content -}}
+{{- if eq .Section "member" -}}{{- $content = partial "member-content.html" $content -}}{{- end -}}
+{{- if eq .Section "research" -}}
+  {{- /* An index of original visible headings makes technical topics accessible above the media. */ -}}
+  {{- $links := "" -}}
+  {{- $visibleMarkup := replaceRE `<!--[\s\S]*?-->` "" $content -}}
+  {{- range $index, $heading := findRE `<h3\b[^>]*>[\s\S]*?</h3>` $visibleMarkup -}}
+    {{- $id := printf "research-topic-%d" (add $index 1) -}}
+    {{- $existingID := findRE `\sid="[^"]+"` $heading 1 -}}
+    {{- if $existingID -}}
+      {{- $id = replaceRE `^\sid="([^"]+)"$` "$1" (index $existingID 0) -}}
+    {{- else -}}
+      {{- $content = replace $content $heading (replaceRE `^<h3` (printf `<h3 id="%s"` $id) $heading) -}}
+    {{- end -}}
+    {{- $links = printf `%s<a href="#%s">%s</a>` $links (htmlEscape $id) (htmlEscape (plainify $heading)) -}}
+  {{- end -}}
+  {{- $titles := findRE `<h2\b[^>]*>[\s\S]*?</h2>` $content 1 -}}
+  {{- if and $links $titles -}}
+    {{- $title := index $titles 0 -}}
+    {{- $content = replace $content $title (printf `%s<nav class="research-index" aria-label="%s">%s</nav>` $title (i18n "pageNavigation") $links) -}}
+  {{- end -}}
+{{- end -}}
+{{- range slice "images" "videos" -}}
+  {{- $content = replaceRE (printf `src="/%s/` .) (printf `src="%s` (printf "%s/" . | relURL)) $content -}}
+{{- end -}}
+{{- range $index, $tag := findRE `<img\s[^>]+>` $content -}}
+  {{- $src := replaceRE `^.*?src="([^"]+)".*$` "$1" $tag -}}
+  {{- $file := replaceRE `^.*/(images/[^?]+)$` "$1" $src -}}
+  {{- if and (hasPrefix $file "images/") (fileExists (printf "static/%s" $file)) -}}
+    {{- $size := imageConfig (printf "static/%s" $file) -}}
+    {{- $loading := "lazy" -}}
+    {{- if eq $index 0 -}}{{- $loading = "eager" -}}{{- end -}}
+    {{- $replacement := replaceRE `<img\s` (printf `<img width="%d" height="%d" loading="%s" decoding="async" ` $size.Width $size.Height $loading) $tag -}}
+    {{- $content = replace $content $tag $replacement -}}
+  {{- end -}}
+{{- end -}}
+{{- range $index, $tag := findRE `<iframe\s[^>]+>` $content -}}
+  {{- $replacement := replaceRE `<iframe\s` (printf `<iframe title="%s %d" loading="lazy" ` (i18n "researchVideo") (add $index 1)) $tag -}}
+  {{- $content = replace $content $tag $replacement -}}
+{{- end -}}
+{{- $content = replaceRE `<video\s` `<video controls preload="metadata" ` $content -}}
+{{- range $id, $message := dict "dPrev" "previousSlide" "dNext" "nextSlide" "prevBtn" "previousSlide" "nextBtn" "nextSlide" -}}
+  {{- $content = replace $content (printf `id="%s"` $id) (printf `id="%s" type="button" aria-label="%s"` $id (i18n $message)) -}}
+{{- end -}}
+{{- $content | safeHTML -}}

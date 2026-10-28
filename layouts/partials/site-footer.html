@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="site-container">
+    <div class="footer-top">
+      <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+      <nav class="footer-navigation" aria-label="{{ i18n "mainNavigation" }}">
+        {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }} <span aria-hidden="true">↗</span></a>{{ end }}
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <a class="footer-copyright" href="{{ .Site.Home.Permalink }}">&copy; {{ with .Site.Copyright | default .Site.Title }}{{ . | safeHTML }} {{ now.Format "2006" }}{{ end }}</a>
+      <div>{{ partial "social-follow.html" . }}</div>
+    </div>
+  </div>
+</footer>

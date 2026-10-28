@@ -2,3 +2,22 @@
   translation: "閱讀更多"
 - id: pageTitle
   translation: "{{ .Name }}"
+- id: menuToggle
+  translation: "開啟或關閉選單"
+- id: mainNavigation
+  translation: "主要導覽"
+- id: languageNavigation
+  translation: "切換語言"
+- id: skipToContent
+  translation: "跳至主要內容"
+- id: previousSlide
+  translation: "上一張照片"
+- id: nextSlide
+  translation: "下一張照片"
+- id: slideLabel
+  translation: "顯示照片"
+- id: researchVideo
+  translation: "研究影片"
+
+- id: pageNavigation
+  translation: "本頁導覽"

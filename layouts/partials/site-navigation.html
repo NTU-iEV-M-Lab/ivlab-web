@@ -1,34 +1,22 @@
-<!-- 加入 fixed, w-100, top-0, z-999 與背景設定 -->
-<nav class="fixed w-100 top-0 z-999 pv3 ph3 ph4-ns shadow-5" role="navigation" style="background-color: rgba(0,0,0,0.9); backdrop-filter: blur(5px);">
-  <div class="flex-l justify-between items-center center">
-    
-    <!-- 左側：Logo 與實驗室名稱 -->
-    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white no-underline white-90 dib">
-      <!-- flex items-center 確保圖文水平對齊 -->
-      <div class="flex items-center">
-        <!-- 單一 Logo：mr2 負責控制圖片右側的留白距離 -->
-        <img src='{{ "images/logo-lab.png" | relURL }}' alt="Lab Logo" class="h3 mr2">
-        <!-- 實驗室名稱 -->
-        <span>{{ .Site.Title }}</span>
-      </div>
+<header class="site-header">
+  <div class="site-container header-inner">
+    <a class="site-brand" href="{{ .Site.Home.RelPermalink }}">
+      <span class="brand-logo"><img src="{{ "images/logo-lab.png" | relURL }}" width="1028" height="369" alt="Lab Logo"></span>
+      <span class="brand-title">{{ if eq .Lang "zh" }}{{ $parts := split .Site.Title " " }}<span class="brand-institution">{{ index $parts 0 }}</span><span class="brand-name">{{ delimit (after 1 $parts) " " }}</span>{{ else }}{{ .Site.Title }}{{ end }}</span>
     </a>
-
-    <!-- 右側：Menu 選單區塊 (維持不變) -->
-    <div class="flex-l items-center">
+    <div class="header-actions">
       {{ partial "i18nlist.html" . }}
-      {{ if .Site.Menus.main }}
-        <ul class="pl0 mr3">
-          {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
-              {{ .Name }}
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      {{ end }}
-      {{ partial "social-follow.html" . }}
+      <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false" aria-label="{{ i18n "menuToggle" }}"><span></span><span></span><span></span></button>
     </div>
-    
+    <nav class="primary-navigation" aria-label="{{ i18n "mainNavigation" }}">
+      <ul class="site-menu" id="primary-menu" data-open="false">
+        {{- $page := . -}}
+        {{- range .Site.Menus.main -}}
+          {{- $active := or ($page.IsMenuCurrent "main" .) (eq .URL $page.RelPermalink) -}}
+          <li><a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end -}}
+      </ul>
+    </nav>
   </div>
-</nav>
+  {{- with .Site.Params.ananke_socials -}}<div class="site-container">{{ partial "social-follow.html" $ }}</div>{{- end -}}
+</header>

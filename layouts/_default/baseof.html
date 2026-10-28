@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <title>{{ block "title" . }}{{ if not .IsHome }}{{ with partial "page-title.html" . }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.documentElement.classList.add('js');</script>
+    <meta name="theme-color" content="#142e32">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ hugo.Generator }}
     {{ $production := eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production") }}
@@ -54,14 +56,18 @@
     {{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
   </head>
 
-  <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+  <body class="ma0 lab-site page-{{ if .IsHome }}home{{ else }}{{ .Section | default .Kind }}{{ end }}" data-previous-slide="{{ i18n "previousSlide" }}" data-next-slide="{{ i18n "nextSlide" }}" data-slide-label="{{ i18n "slideLabel" }}" data-page-navigation="{{ i18n "pageNavigation" }}">
+
+    <a class="skip-link" href="#main-content">{{ i18n "skipToContent" }}</a>
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    <main class="pb7" role="main">
+    <main id="main-content" tabindex="-1">
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
-    <script src="{{ "js/carousel.js" | relURL }}"></script>
-    <script src="{{ "js/lab-carousel.js" | relURL }}"></script>
+    <script src="{{ "js/site.js" | relURL }}?v={{ substr (sha256 (readFile "static/js/site.js")) 0 12 }}" defer onerror="document.documentElement.classList.remove('js')"></script>
+    {{ if .IsHome }}<script src="{{ "js/carousel.js" | relURL }}?v={{ substr (sha256 (readFile "static/js/carousel.js")) 0 12 }}" defer></script>{{ end }}
+    {{ if eq .Section "member" }}<script src="{{ "js/lab-carousel.js" | relURL }}?v={{ substr (sha256 (readFile "static/js/lab-carousel.js")) 0 12 }}" defer></script>{{ end }}
+    <script type="module" src="{{ "js/animations.js" | relURL }}?v={{ substr (sha256 (readFile "static/js/animations.js")) 0 12 }}"></script>
   </body>
 </html>

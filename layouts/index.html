@@ -1,13 +1,29 @@
-{{ define "header" }}
-{{ partial "page-header.html" . }}
-{{ end }}
-
 {{ define "main" }}
-<article class="center ph3 pt5 pb4" style="max-width: 1260px; margin: 0 auto;">
-<div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes" | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} w-100">
-{{- $content := .Content -}}
-{{- $content = $content | replaceRE "src=\"/(videos|images)/" (printf "src=\"%s/$1/" ("/ivlab-web" | relURL)) -}}
-{{- $content | safeHTML -}}
-</div>
+<section class="research-hero" aria-labelledby="hero-title">
+  <div class="site-container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ .Site.Params.description }}</p>
+      <h1 id="hero-title">{{ if eq .Lang "zh" }}{{ $parts := split .Site.Title " " }}<span class="hero-institution">{{ index $parts 0 }}</span><span class="hero-lab-name"><span class="hero-title-line">{{ replace (delimit (after 1 $parts) " ") "與" "與</span><span class=\"hero-title-line\">" | safeHTML }}</span></span>{{ else }}{{ $parts := split .Site.Title " and " }}<span class="hero-title-line">{{ index $parts 0 }}</span>{{ if gt (len $parts) 1 }} <span class="hero-title-line">and {{ delimit (after 1 $parts) " and " }}</span>{{ end }}{{ end }}</h1>
+      <div class="hero-links">
+        {{ range .Site.Menus.main }}{{ if or (eq .Weight 5) (eq .Weight 6) }}
+        <a href="{{ .URL }}">{{ .Name }} <span aria-hidden="true">↗</span></a>
+        {{ end }}{{ end }}
+      </div>
+    </div>
+    <div class="hero-media">
+      <figure class="hero-photo">
+        <img src="{{ "images/dubi_world_challenge2.jpg" | relURL }}" width="1568" height="1046" alt="Dubai Challenge 2023" fetchpriority="high">
+        <figcaption>Dubai Challenge 2023</figcaption>
+      </figure>
+      <div class="hero-photo-secondary" aria-hidden="true">
+        <img src="{{ "images/dubi2021.jpg" | relURL }}" width="1200" height="885" alt="" loading="lazy">
+      </div>
+      <span class="hero-cross" aria-hidden="true">+</span>
+    </div>
+  </div>
+  <div class="hero-bottom site-container" aria-hidden="true"><span></span><span>↓</span></div>
+</section>
+<article class="site-container page-shell">
+  <div class="page-content">{{ partial "render-content.html" . }}</div>
 </article>
 {{ end }}

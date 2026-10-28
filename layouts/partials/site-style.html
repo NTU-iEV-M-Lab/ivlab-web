@@ -1,0 +1,9 @@
+{{ with partialCached "func/style/GetMainCSS" "style/GetMainCSS" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
+{{ range site.Params.custom_css }}
+  {{ $url := . | relURL }}
+  {{ $file := printf "static/%s" . }}
+  {{ if fileExists $file }}{{ $url = printf "%s?v=%s" $url (substr (sha256 (readFile $file)) 0 12) }}{{ end }}
+  <link rel="stylesheet" href="{{ $url }}">
+{{ end }}
