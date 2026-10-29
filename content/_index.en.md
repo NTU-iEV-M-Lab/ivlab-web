@@ -1,3 +1,7 @@
+---
+title: "NTU Intelligent Vehicle and Mechatronics Laboratory"
+description: "Explore autonomous driving, perception, localization, vehicle control and multi-vehicle coordination at NTU's Intelligent Vehicle and Mechatronics Laboratory."
+---
 <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">🌟 Highlight Achievements</h2>
 
 <div class="flex flex-wrap justify-between">

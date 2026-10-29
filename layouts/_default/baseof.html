@@ -9,8 +9,8 @@
     <meta name="theme-color" content="#142e32">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ hugo.Generator }}
-    {{ $production := eq (getenv "HUGO_ENV") "production" | or (eq site.Params.env "production") }}
-    {{ $public := not .Params.private }}
+    {{ $production := and hugo.IsProduction (not hugo.IsServer) }}
+    {{ $public := partial "seo/indexable.html" . }}
     {{ if and $production $public }}
       <meta name="robots" content="index, follow">
     {{ else }}
@@ -50,7 +50,7 @@
     {{- template "_internal/schema.html" . -}}
     {{- template "_internal/twitter_cards.html" . -}}
 
-    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+    {{ if $production }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
     {{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}

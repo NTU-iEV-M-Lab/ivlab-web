@@ -1,3 +1,7 @@
+---
+title: "指導教授"
+description: "認識國立臺灣大學機械工程學系李綱博士的學經歷、研究專長與聯絡資訊，涵蓋車輛動力學、自動駕駛感知定位、機電整合及無人載具協同控制。"
+---
 <div class="flex-l items-center mb4 pa4-l pa3 ba b--light-gray bg-white shadow-1 br3">
 <div class="w-100 w-30-l mb3 mb0-l pr4-l">
 <img src="/images/KangLi.jpg" alt="李綱 教授" class="db w-100 br2 ba b--black-10">

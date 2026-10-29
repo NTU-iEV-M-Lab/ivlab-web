@@ -1,0 +1,5 @@
+{{- /* Shared by robots meta and Sitemap. Protect private/noindex, robots restrictions and sitemap.disable. */ -}}
+{{- $robots := lower (printf "%v" (.Params.robots | default "")) -}}
+{{- $restricted := gt (len (findRE `\b(noindex|nofollow|none)\b` $robots)) 0 -}}
+{{- $emptyTaxonomy := and (in (slice "taxonomy" "term") .Kind) (eq (len .Pages) 0) -}}
+{{- return not (or .Params.private .Params.noindex $restricted .Sitemap.Disable $emptyTaxonomy (eq .Kind "404")) -}}

@@ -1,3 +1,7 @@
+---
+title: "Members"
+description: "Meet the Ph.D. students, master's students and research assistants at NTU's Intelligent Vehicle and Mechatronics Laboratory, and explore lab group photos."
+---
 <div class="lab-carousel">
   <div class="carousel-track" id="labSlider">
     <img src="/images/hackathon_group_photo.jpg" alt="Defense Tech Event Group Photo">

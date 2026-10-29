@@ -1,3 +1,7 @@
+---
+title: "Research"
+description: "Explore autonomous vehicles and ADAS, heterogeneous unmanned vehicle coordination, UAV flight control and interference resilience, with research videos."
+---
 <div class="w-100 mt4">
 
 <div class="w-100 mb4 pb3 bb b--black-10">

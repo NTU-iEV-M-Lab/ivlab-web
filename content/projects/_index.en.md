@@ -1,3 +1,7 @@
+---
+title: "Research Projects"
+description: "Browse active and completed NTU lab projects on autonomous navigation, UAV systems, digital twins and physics-informed neural networks, with project overviews."
+---
 <div class="mw9 center w-100">
 
 <!-- 1. NSTC Projects -->

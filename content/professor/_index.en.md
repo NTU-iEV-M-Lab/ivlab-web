@@ -1,3 +1,7 @@
+---
+title: "Professor"
+description: "Learn about Dr. Kang Li, Associate Professor at NTU, including his education, research expertise, academic experience and contact information."
+---
 <div class="flex-l items-center mb4 pa4-l pa3 ba b--light-gray bg-white shadow-1 br3">
 <div class="w-100 w-30-l mb3 mb0-l pr4-l">
 <img src="/images/KangLi.jpg" alt="Prof. Kang Li" class="db w-100 br2 ba b--black-10">

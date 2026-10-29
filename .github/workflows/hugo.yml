@@ -56,6 +56,18 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Validate development indexing protection
+        env:
+          HUGO_ENVIRONMENT: development
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache_development
+        run: |
+          hugo \
+            --environment development \
+            --baseURL "https://ntu-iev-m-lab.github.io/ivlab-web/" \
+            --destination "${{ runner.temp }}/ivlab-seo-development"
+          python3 scripts/check_seo.py "${{ runner.temp }}/ivlab-seo-development" --mode development
+      - name: Validate production SEO before upload
+        run: python3 scripts/check_seo.py public --mode production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

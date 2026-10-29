@@ -1,4 +1,6 @@
 ---
+title: "Publications"
+description: "Browse journal papers, international and domestic conference publications, and technical reports from NTU's Intelligent Vehicle and Mechatronics Laboratory."
 ---
 
 ## Journal Papers

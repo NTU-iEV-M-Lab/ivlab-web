@@ -1,3 +1,7 @@
+---
+title: "實驗室成員"
+description: "認識國立臺灣大學智慧載具與機電整合實驗室的博士生、碩士生與研究助理，並瀏覽實驗室活動、校園生活與團隊合照。"
+---
 <div class="lab-carousel">
   <div class="carousel-track" id="labSlider">
     <img src="/images/hackathon_group_photo.jpg" alt="黑客松活動合照">
