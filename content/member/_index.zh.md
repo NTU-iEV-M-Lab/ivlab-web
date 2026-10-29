@@ -1,10 +1,10 @@
 <div class="lab-carousel">
   <div class="carousel-track" id="labSlider">
-    <img src="/images/hackathon_group_photo.jpg" alt="黑客松團隊合照">
-    <img src="/images/csme_group_photo.jpg" alt="Lab Life 1">
-    <img src="/images/graduation1.jpg" alt="Lab Life 2">
-    <img src="/images/dubi_lunch.jpg" alt="Lab Life 3">
-    <img src="/images/dubi_world_challenge1.jpg" alt="Lab Life 4">
+    <img src="/images/hackathon_group_photo.jpg" alt="黑客松活動合照">
+    <img src="/images/csme_group_photo.jpg" alt="CSME 2025 合照">
+    <img src="/images/graduation1.jpg" alt="臺大椰林大道合照">
+    <img src="/images/dubi_lunch.jpg" alt="杜拜競賽聚餐照">
+    <img src="/images/dubi_world_challenge1.jpg" alt="杜拜團隊合照">
   </div>
   
   <button class="carousel-btn prev-btn" id="prevBtn">&#10094;</button>

@@ -1,10 +1,10 @@
 <div class="lab-carousel">
   <div class="carousel-track" id="labSlider">
-    <img src="/images/hackathon_group_photo.jpg" alt="Hackathon group photo">
-    <img src="/images/csme_group_photo.jpg" alt="Lab Life 1">
-    <img src="/images/graduation1.jpg" alt="Lab Life 2">
-    <img src="/images/dubi_lunch.jpg" alt="Lab Life 3">
-    <img src="/images/dubi_world_challenge1.jpg" alt="Lab Life 4">
+    <img src="/images/hackathon_group_photo.jpg" alt="Defense Tech Event Group Photo">
+    <img src="/images/csme_group_photo.jpg" alt="CSME 2025 Group Photo">
+    <img src="/images/graduation1.jpg" alt="NTU Palm Boulevard Group Photo">
+    <img src="/images/dubi_lunch.jpg" alt="Dubai Competition Dinner Photo">
+    <img src="/images/dubi_world_challenge1.jpg" alt="Dubai Team Group Photo">
   </div>
 
   <button class="carousel-btn prev-btn" id="prevBtn">&#10094;</button>

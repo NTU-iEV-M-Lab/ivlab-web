@@ -43,7 +43,7 @@ theme = 'ananke'
       url = "/research/"
       weight = 5
     [[languages.zh.menus.main]]
-      name = "執行中計畫與專案"
+      name = "研究計畫與專案"
       url = "/projects/"
       weight = 6
 
@@ -74,6 +74,6 @@ theme = 'ananke'
       pageRef = "research"
       weight = 5
     [[languages.en.menus.main]]
-      name = "Projects"
+      name = "Research Projects"
       pageRef = "projects"
       weight = 6

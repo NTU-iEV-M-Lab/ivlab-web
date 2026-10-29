@@ -24,7 +24,7 @@
     menu.addEventListener('click', event => {
       if (event.target.closest('a')) closeMenu();
     });
-    const desktop = window.matchMedia('(min-width: 1051px)');
+    const desktop = window.matchMedia('(min-width: 1181px)');
     desktop.addEventListener('change', () => closeMenu(!desktop.matches && menu.contains(document.activeElement)));
   }
 

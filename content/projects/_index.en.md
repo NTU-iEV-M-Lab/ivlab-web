@@ -1,23 +1,10 @@
 <div class="mw9 center w-100">
 
 <!-- 1. NSTC Projects -->
-<h2 class="f2 fw6 mb4 mt2 pb2 bb b--black-10 dark-blue">🔬 Active NSTC Projects</h2>
+<section class="project-category" aria-labelledby="section-1">
+<h2 id="section-1" class="f2 fw6 mb4 mt2 pb2 bb b--black-10 dark-blue">🔬 Active NSTC Projects</h2>
 
-<article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--blue shadow-4">
-<h3 class="f3 fw6 mt0 mb3 dark-gray">Development of a High-Performance Autonomous Navigation System for Unmanned Vehicles Integrating Fiber Optic Gyroscope Inertial Navigation and Multi-Modal AI Visual Perception</h3>
-<div class="lh-copy f5 black-70 mt3">
-<strong class="dark-blue f5">Project Overview:</strong><br>
-Inspired by human autonomous motion and decision-making processes, this project aims to develop an AI-based navigation system for unmanned vehicles operating across maritime, ground, and aerial domains. By emulating the spatial perception and motion-planning capabilities of human operators, the proposed system is designed to achieve deeper environmental understanding and more intelligent autonomous decision-making. The project is expected to contribute substantive innovations to autonomous vehicle research and support the advancement of Taiwan's all-domain unmanned vehicle industry.
-</div>
-</article>
 
-<article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--blue shadow-4">
-<h3 class="f3 fw6 mt0 mb3 dark-gray">Digital Twin Cross-Platform Collaborative R&D for Intelligent Automation of Container Terminal Vehicles</h3>
-<div class="lh-copy f5 black-70 mt3">
-<strong class="dark-blue f5">Project Overview:</strong><br>
-National Taiwan University and Chenxi Precision have jointly established the Building and Port Automated Vehicle R&amp;D Sub-Center, which focuses on the automation and autonomy of five categories of industrial vehicles. Built upon a digital twin framework, the project encompasses drive-by-wire retrofitting, remote operation, human–machine control switching, multimodal perception, and cross-platform fleet coordination and dispatch. The project also includes international research collaboration with the University of British Columbia (UBC), Canada.
-</div>
-</article>
 
 <article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--blue shadow-4">
 <h3 class="f3 fw6 mt0 mb3 dark-gray"> SDN-Driven UAV Swarm Control: SIL/HIL Simulation Platform Architecture and Networked Control Performance Validation </h3>
@@ -29,7 +16,10 @@ This project develops an intelligent command and control framework with advanced
 
 
 <!-- 2. Other Projects -->
-<h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">📋 Other Active Projects</h2>
+</section>
+
+<section class="project-category" aria-labelledby="section-2">
+<h2 id="section-2" class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">📋 Other Active Projects</h2>
 
 <article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--gray shadow-4">
 <h3 class="f3 fw6 mt0 mb3 dark-gray">Hardware-in-the-Loop (HIL) Research for UAV Hybrid Propulsion Systems</h3>
@@ -61,7 +51,33 @@ Developing an intelligent command brain with deep environmental understanding an
 
 
 <!-- 4. International Collaboration -->
-<h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 purple">🌍 International Collaboration</h2>
+</section>
+
+<section class="project-category" aria-labelledby="section-3">
+<h2 id="section-3" class="f2 fw6 mb4 mt5 pb2 bb b--black-10 purple">🌍 International Collaboration</h2>
+
+
+<p class="project-empty">No international collaboration projects are currently listed.</p>
+</section>
+
+<section class="project-category project-category--completed" aria-labelledby="completed-projects">
+<h2 id="completed-projects" class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">Completed Projects</h2>
+
+<article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--blue shadow-4">
+<h3 class="f3 fw6 mt0 mb3 dark-gray">Development of a High-Performance Autonomous Navigation System for Unmanned Vehicles Integrating Fiber Optic Gyroscope Inertial Navigation and Multi-Modal AI Visual Perception</h3>
+<div class="lh-copy f5 black-70 mt3">
+<strong class="dark-blue f5">Project Overview:</strong><br>
+Inspired by human autonomous motion and decision-making processes, this project aims to develop an AI-based navigation system for unmanned vehicles operating across maritime, ground, and aerial domains. By emulating the spatial perception and motion-planning capabilities of human operators, the proposed system is designed to achieve deeper environmental understanding and more intelligent autonomous decision-making. The project is expected to contribute substantive innovations to autonomous vehicle research and support the advancement of Taiwan's all-domain unmanned vehicle industry.
+</div>
+</article>
+
+<article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--blue shadow-4">
+<h3 class="f3 fw6 mt0 mb3 dark-gray">Digital Twin Cross-Platform Collaborative R&D for Intelligent Automation of Container Terminal Vehicles</h3>
+<div class="lh-copy f5 black-70 mt3">
+<strong class="dark-blue f5">Project Overview:</strong><br>
+National Taiwan University and Chenxi Precision have jointly established the Building and Port Automated Vehicle R&amp;D Sub-Center, which focuses on the automation and autonomy of five categories of industrial vehicles. Built upon a digital twin framework, the project encompasses drive-by-wire retrofitting, remote operation, human–machine control switching, multimodal perception, and cross-platform fleet coordination and dispatch. The project also includes international research collaboration with the University of British Columbia (UBC), Canada.
+</div>
+</article>
 
 <article class="bg-white br3 pa4 mb5 ba b--black-10 bl bw3 b--purple shadow-4">
 <h3 class="f3 fw6 mt0 mb3 dark-gray">Physics-Informed Neural Network-Based Material Cyclic Hardening Prediction and Assessment</h3>
@@ -70,5 +86,6 @@ Developing an intelligent command brain with deep environmental understanding an
 In collaboration with Tohoku University, Japan, this project develops a prediction framework based on Physics-Informed Neural Networks (PINNs). By extracting information from monotonic tensile test data, the framework inversely identifies complex cyclic hardening parameters while incorporating governing equations from solid mechanics to ensure physical consistency. Monte Carlo simulation is further integrated with finite element analysis to quantify how material-level uncertainties affect macroscopic structural behavior.
 </div>
 </article>
+</section>
 
 </div>
