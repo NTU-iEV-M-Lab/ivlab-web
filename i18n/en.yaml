@@ -21,3 +21,7 @@
 
 - id: pageNavigation
   translation: "On this page"
+- id: relatedLinks
+  translation: "Related Links"
+- id: uvrdcName
+  translation: "NTU Unmanned Vehicles Research and Development Center (UVRDC)"

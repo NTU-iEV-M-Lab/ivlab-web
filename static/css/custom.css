@@ -278,7 +278,14 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
 /* A substantial footer closes the site with the same identity and navigation. */
 .site-footer { background: var(--night); color: #d5e2dd; border-top: 1px solid #ffffff26; padding: 54px 0 0; }
 .footer-top { display: grid; grid-template-columns: minmax(0,1.45fr) minmax(0,1fr); gap: 96px; padding-bottom: 60px; }
+.footer-branding { min-width: 0; }
 .footer-brand { color: white; font-size: var(--type-footer-brand); line-height: var(--leading-heading); font-weight: var(--weight-display); letter-spacing: var(--tracking-heading); text-decoration: none; max-width: 620px; }
+.footer-related { max-width: 430px; margin-top: 36px; padding-top: 20px; border-top: 1px solid #ffffff26; }
+.footer-related-title { margin: 0 0 12px; color: #a9c5b8; font-size: var(--type-caption); font-weight: var(--weight-heading); line-height: var(--leading-ui); letter-spacing: .08em; text-transform: uppercase; }
+.footer-related-link { display: inline-flex; align-items: baseline; gap: 10px; max-width: 100%; color: #d5e2dd; font-size: var(--type-footer-nav); font-weight: var(--weight-medium); line-height: 1.55; text-decoration: none; text-wrap: balance; transition: color .2s; }
+.footer-related-link:hover { color: var(--accent); }
+.footer-link-arrow { display: inline-block; color: var(--accent); transition: transform .2s ease; }
+.footer-related-link:hover .footer-link-arrow { transform: translate(2px,-2px); }
 .footer-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 34px; }
 .footer-navigation a { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 44px; padding-bottom: 8px; color: #d5e2dd; font-size: var(--type-footer-nav); font-weight: var(--weight-medium); line-height: var(--leading-ui); text-decoration: none; border-bottom: 1px solid #ffffff20; transition: color .2s; }
 .footer-navigation a:hover { color: var(--accent); }
@@ -438,6 +445,7 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
   .site-footer { padding-top: 36px; }
   .footer-top { grid-template-columns: 1fr; gap: 30px; padding-bottom: 32px; }
   .footer-brand { max-width: 330px; }
+  .footer-related { margin-top: 28px; }
   .footer-navigation { gap: 8px 18px; }
   .footer-bottom { display: block; }
   .footer-copyright { display: block; }

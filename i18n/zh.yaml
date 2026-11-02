@@ -21,3 +21,7 @@
 
 - id: pageNavigation
   translation: "本頁導覽"
+- id: relatedLinks
+  translation: "相關網站"
+- id: uvrdcName
+  translation: "國立臺灣大學無人載具研發設計中心"

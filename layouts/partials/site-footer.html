@@ -1,7 +1,16 @@
 <footer class="site-footer">
   <div class="site-container">
     <div class="footer-top">
-      <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+      <div class="footer-branding">
+        <a class="footer-brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+        <section class="footer-related" aria-labelledby="footer-related-title">
+          <h2 class="footer-related-title" id="footer-related-title">{{ i18n "relatedLinks" }}</h2>
+          <a class="footer-related-link" href="https://ntu-iev-m-lab.github.io/UVRDC_web/" target="_blank" rel="noopener noreferrer">
+            <span>{{ i18n "uvrdcName" }}</span>
+            <span class="footer-link-arrow" aria-hidden="true">↗</span>
+          </a>
+        </section>
+      </div>
       <nav class="footer-navigation" aria-label="{{ i18n "mainNavigation" }}">
         {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }} <span aria-hidden="true">↗</span></a>{{ end }}
       </nav>
