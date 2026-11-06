@@ -48,33 +48,58 @@ description: "國立臺灣大學智慧載具與機電整合實驗室，研究自
 </div>
 </article>
 
-<!-- 右側卡片：NTUEAT AMR -->
-<article class="w-100 bg-white br3 pa4 mv3 ba b--black-10 shadow-4 flex flex-column justify-between">
-<div>
-<div class="tc">
-<h3 class="f3 mb3 dark-blue">NTU EAT 校園送餐機器人</h3>
+<!-- NTU EAT：等寬的室外／室內場景展示 -->
+<article class="ntu-eat" aria-labelledby="ntu-eat-title">
+<div class="ntu-eat-intro">
+<div class="ntu-eat-heading">
+<p class="ntu-eat-eyebrow">NTU EAT / AMR</p>
+<h3 id="ntu-eat-title">NTU EAT 校園送餐機器人</h3>
 </div>
-<p class="lh-copy f5 black-70 mb4">
+<div class="ntu-eat-overview">
+<p>
 智慧車輛與機電整合實驗室開發之自主移動機器人（AMR）NTU EAT，整合多感測器融合定位與動態避障演算法。實現室內外環境的無縫導航，並透過物聯網技術與智慧電梯系統對接，完成自動進出電梯與跨樓層垂直配送任務。該系統已於台大社科院、台北花博公園等地進行多次實地運行測試，驗證從訂餐至取餐的全自動化流程。
 </p>
-<ul class="pl3 f5 lh-copy mb4">
+<ul class="ntu-eat-news">
 <li class="mb2"><a href="https://www.eng.ntu.edu.tw/TC/news_in.aspx?id=2199&chk=3d8ab894-2ace-4052-8c2f-2da1c02bdcbd&mid=9&cid=81&param=pn%3D7%26mid%3D9%26cid%3D81%26key%3D" target="_blank" class="link blue hover-dark-blue">NTUEAT 台大校園無人送餐實測新聞報導</a></li>
 </ul>
 </div>
+</div>
 
-<!-- 下半部：兩個影片 -->
-<div class="flex flex-column flex-row-l items-center mt-auto">
-<div class="w-100 w-50-l pr2-l mb3 mb0-l" style="pointer-events: none;">
-<div class="aspect-ratio aspect-ratio--16x9 br2 overflow-hidden shadow-3">
-<iframe src="https://www.youtube.com/embed/j1kVTjPE8es?autoplay=1&mute=1&loop=1&playlist=j1kVTjPE8es&controls=0&modestbranding=1&rel=0&playsinline=1" class="aspect-ratio--object" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="ntu-eat-scenes">
+<section class="ntu-eat-scene" aria-labelledby="ntu-eat-outdoor">
+<div class="ntu-eat-scene-heading">
+<span class="ntu-eat-number" aria-hidden="true">01</span>
+<h4 id="ntu-eat-outdoor">室外場景<span>道路自主移動</span></h4>
 </div>
+<div class="ntu-eat-media">
+<iframe aria-label="NTU EAT 室外道路場景影片" src="https://www.youtube.com/embed/j1kVTjPE8es?autoplay=0&mute=1&loop=1&playlist=j1kVTjPE8es&controls=1&rel=0&playsinline=1" width="560" height="315" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<div class="w-100 w-50-l pl2-l" style="pointer-events: none;">
-<div class="aspect-ratio aspect-ratio--16x9 br2 overflow-hidden shadow-3">
-<iframe src="https://www.youtube.com/embed/lImeZVryTdc?autoplay=1&mute=1&loop=1&playlist=lImeZVryTdc&controls=0&modestbranding=1&rel=0&playsinline=1" class="aspect-ratio--object" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p class="ntu-eat-feature-label">專案功能</p>
+<ul class="ntu-eat-features">
+<li>室外自主導航</li>
+<li>多感測器融合定位</li>
+<li>動態避障</li>
+</ul>
+<a class="ntu-eat-watch" href="https://www.youtube.com/watch?v=j1kVTjPE8es" target="_blank" rel="noopener noreferrer">在 YouTube 觀看室外場景影片 <span aria-hidden="true">↗</span></a>
+</section>
+<section class="ntu-eat-scene" aria-labelledby="ntu-eat-indoor">
+<div class="ntu-eat-scene-heading">
+<span class="ntu-eat-number" aria-hidden="true">02</span>
+<h4 id="ntu-eat-indoor">室內場景<span>電梯整合與跨樓層配送</span></h4>
 </div>
+<div class="ntu-eat-media">
+<iframe aria-label="NTU EAT 室內電梯場景影片" src="https://www.youtube.com/embed/lImeZVryTdc?autoplay=0&mute=1&loop=1&playlist=lImeZVryTdc&controls=1&rel=0&playsinline=1" width="560" height="315" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+<p class="ntu-eat-feature-label">專案功能</p>
+<ul class="ntu-eat-features">
+<li>室內自主導航</li>
+<li>智慧電梯系統整合</li>
+<li>跨樓層配送</li>
+</ul>
+<a class="ntu-eat-watch" href="https://www.youtube.com/watch?v=lImeZVryTdc" target="_blank" rel="noopener noreferrer">在 YouTube 觀看室內場景影片 <span aria-hidden="true">↗</span></a>
+</section>
 </div>
+<p class="ntu-eat-source">功能摘自專案介紹；影片提供場景參考。</p>
 </article>
 </div>
 

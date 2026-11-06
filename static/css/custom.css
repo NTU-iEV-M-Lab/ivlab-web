@@ -147,15 +147,32 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
 .page-home .page-content article > .flex > div:last-child { grid-column: 2/-1; }
 .page-home .page-content .card-carousel { aspect-ratio: 3/2; border-radius: 0; }
 .page-home .page-content article .aspect-ratio { border-radius: 0; background: #e0e5d9; }
-.page-home .page-content > .flex > article:nth-of-type(2) { grid-template-columns: minmax(0,.85fr) minmax(0,1.25fr); gap: 50px; margin: 0 0 86px; padding: 56px 48px; background: var(--night); color: #e6eee9; }
-.page-home .page-content article:nth-of-type(2) > div:first-child { grid-column: 1; grid-row: 1; padding-top: 0; }
-.page-home .page-content article:nth-of-type(2) h3 { color: #fff; }
-.page-home .page-content article:nth-of-type(2) p { color: #d1ded5; }
-.page-home .page-content article:nth-of-type(2) li { border-color: #ffffff35; }
-.page-home .page-content article:nth-of-type(2) a { color: var(--accent); }
-.page-home .page-content article:nth-of-type(2) > .flex { grid-column: 2; grid-row: 1; display: block; }
-.page-home .page-content article:nth-of-type(2) > .flex > div:first-child { width: 100%; }
-.page-home .page-content article:nth-of-type(2) > .flex > div:last-child { width: 74%; margin-top: 22px; margin-left: auto; }
+/* NTU EAT: one overview above two equal scene studies, with uncropped players. */
+.page-home .page-content > .flex > article.ntu-eat { display: block; padding: clamp(24px,4vw,48px); background: var(--night); color: #e6eee9; }
+.page-home .ntu-eat .ntu-eat-intro { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.35fr); gap: 48px; padding: 0 0 36px; border-bottom: 1px solid #ffffff35; }
+.page-home .ntu-eat h3 { max-width: 440px; margin: 0; color: white; font-size: var(--type-section); }
+.page-home .ntu-eat .ntu-eat-eyebrow { margin: 0 0 16px; color: var(--accent); font: var(--type-caption)/var(--leading-ui) var(--font-mono); letter-spacing: .08em; }
+.page-home .ntu-eat .ntu-eat-overview > p { margin: 0 0 24px; color: #d1ded5; }
+.page-home .ntu-eat .ntu-eat-news li { padding: 14px 0 0; border-color: #ffffff35; }
+.page-home .ntu-eat a { color: var(--accent); }
+.page-home .ntu-eat a:hover { color: white; }
+.page-home .ntu-eat :is(a,iframe):focus-visible { outline-color: var(--accent); }
+.page-home .ntu-eat .ntu-eat-scenes { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; margin-top: 32px; }
+.ntu-eat-scene { display: flex; flex-direction: column; min-width: 0; }
+.ntu-eat-scene-heading { display: flex; align-items: flex-start; gap: 16px; min-height: 94px; padding-bottom: 20px; }
+.ntu-eat-number { padding-top: 5px; color: var(--accent); font: var(--type-caption)/var(--leading-ui) var(--font-mono); }
+.page-home .ntu-eat h4 { margin: 0; color: white; font-size: var(--type-subsection); }
+.ntu-eat h4 span { display: block; margin-top: 8px; color: #d1ded5; font-size: var(--type-caption); font-weight: var(--weight-body); line-height: var(--leading-ui); letter-spacing: 0; }
+.ntu-eat-media { position: relative; z-index: 0; isolation: isolate; overflow: hidden; width: 100%; aspect-ratio: 16/9; background: #071c24; }
+.ntu-eat-media iframe { display: block; position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.page-home .ntu-eat .ntu-eat-feature-label { margin: 22px 0 8px; color: var(--accent); font-size: var(--type-caption); font-weight: var(--weight-heading); letter-spacing: .04em; }
+.page-home .ntu-eat .ntu-eat-features { margin-bottom: 16px; }
+.page-home .ntu-eat .ntu-eat-features li { display: flex; align-items: baseline; gap: 10px; padding-block: 10px; color: #e6eee9; border-color: #ffffff26; }
+.ntu-eat-features li::before { content: "—"; color: var(--accent); }
+.page-home .ntu-eat .ntu-eat-watch { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; min-height: 44px; margin-top: auto; padding-block: 12px; font-size: var(--type-caption); line-height: var(--leading-ui); text-decoration: none; border-bottom: 1px solid #ffffff35; }
+.ntu-eat-watch span { transition: transform .2s ease; }
+.ntu-eat-watch:hover span { transform: translate(2px,-2px); }
+.page-home .ntu-eat .ntu-eat-source { margin: 28px 0 0; color: #d1ded5; font-size: var(--type-caption); line-height: var(--leading-ui); }
 .page-home .page-content > div:last-child { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap: 80px; padding: 0; margin: 0; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
 .page-home .page-content > div:last-child > div { width: auto; padding: 0; margin: 0; }
 .page-home .page-content > div:last-child > div + div { padding-left: 32px; border-left: 1px solid var(--line); }
@@ -307,7 +324,7 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
   .hero-media { grid-template-columns: minmax(0,3.5fr) minmax(0,1fr); gap: 12px; }
   .hero-links { gap: 16px; }
   .page-home .page-content > .flex > article { gap: 36px; }
-  .page-home .page-content > .flex > article:nth-of-type(2) { padding: 40px 32px; gap: 36px; }
+  .page-home .ntu-eat .ntu-eat-intro { gap: 30px; }
   .page-shell.has-toc { grid-template-columns: 190px minmax(0,1fr); gap: 32px; }
   .member-layout { gap: 32px; grid-template-columns: minmax(0,1fr) minmax(0,1.05fr); }
   .people-group { column-gap: 14px; }
@@ -367,9 +384,8 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
   .page-home .page-content article > .flex { grid-column: 1; grid-row: 2; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); align-items: end; gap: 20px; }
   .page-home .page-content article > .flex > div:first-child { grid-column: 1; }
   .page-home .page-content article > .flex > div:last-child { grid-column: 2; }
-  .page-home .page-content > .flex > article:nth-of-type(2) { grid-template-columns: 1fr; padding: 36px 28px; }
-  .page-home .page-content article:nth-of-type(2) > .flex { grid-column: 1; grid-row: 2; display: grid; }
-  .page-home .page-content article:nth-of-type(2) > .flex > div:last-child { width: 100%; margin: 0; }
+  .page-home .ntu-eat .ntu-eat-intro { grid-template-columns: minmax(0,1fr); gap: 24px; padding-bottom: 28px; }
+  .page-home .ntu-eat .ntu-eat-scenes { gap: 24px; }
   .page-home .page-content > div:last-child { gap: 30px; }
   .page-home .page-content > div:last-child > div + div { padding-left: 24px; }
   .page-professor .page-content > div:first-child { grid-template-columns: 200px minmax(0,1fr); gap: 36px; padding-bottom: 40px; }
@@ -384,6 +400,8 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
   .footer-top { gap: 40px; }
 }
 @media (max-width: 640px) {
+  .page-home .ntu-eat .ntu-eat-scenes { grid-template-columns: minmax(0,1fr); gap: 32px; }
+  .ntu-eat-scene-heading { min-height: 0; }
   .page-research .research-index { grid-template-columns: 1fr; gap: 0; margin-top: 18px; }
   .page-research .research-index a { min-height: 44px; padding-block: 10px; }
   .page-research .page-content .pr4-l + div { grid-template-columns: minmax(0,1fr); gap: 24px; }
@@ -416,8 +434,6 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
   .page-home .page-content > h2 { margin-bottom: 30px; }
   .page-home .page-content article > .flex { grid-template-columns: 1fr; gap: 20px; }
   .page-home .page-content article > .flex > div:last-child { grid-column: 1; width: 84%; margin-left: auto; }
-  .page-home .page-content > .flex > article:nth-of-type(2) { padding: 30px 22px; gap: 26px; }
-  .page-home .page-content article:nth-of-type(2) > .flex > div:last-child { width: 100%; }
   .page-home .page-content > div:last-child { grid-template-columns: 1fr; gap: 24px; }
   .page-home .page-content > div:last-child > div + div { border: 0; border-top: 1px solid var(--line); padding: 24px 0 0; }
   .page-member .page-heading { padding-block: 22px 24px; }

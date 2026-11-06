@@ -46,33 +46,58 @@ The NTU Intelligent Vehicle and Mechatronics Laboratory is dedicated to autonomo
 </div>
 </article>
 
-<!-- Right card: NTU EAT AMR -->
-<article class="w-100 bg-white br3 pa4 mv3 ba b--black-10 shadow-4 flex flex-column justify-between">
-<div>
-<div class="tc">
-<h3 class="f3 mb3 dark-blue">NTU EAT — Campus Food Delivery Robot</h3>
+<!-- NTU EAT: equal-width outdoor and indoor scene studies -->
+<article class="ntu-eat" aria-labelledby="ntu-eat-title">
+<div class="ntu-eat-intro">
+<div class="ntu-eat-heading">
+<p class="ntu-eat-eyebrow">NTU EAT / AMR</p>
+<h3 id="ntu-eat-title">NTU EAT — Campus Food Delivery Robot</h3>
 </div>
-<p class="lh-copy f5 black-70 mb4">
+<div class="ntu-eat-overview">
+<p>
 NTU EAT is an Autonomous Mobile Robot (AMR) developed by the lab, integrating multi-sensor fusion localization and dynamic obstacle avoidance algorithms. It achieves seamless indoor/outdoor navigation and interfaces with IoT-connected elevator systems to complete automatic boarding, floor traversal, and vertical delivery tasks. The system has been deployed and tested at NTU's College of Social Sciences, Taipei Expo Park, and other venues, validating a fully automated workflow from order placement to food pickup.
 </p>
-<ul class="pl3 f5 lh-copy mb4">
+<ul class="ntu-eat-news">
 <li class="mb2"><a href="https://www.eng.ntu.edu.tw/TC/news_in.aspx?id=2199&chk=3d8ab894-2ace-4052-8c2f-2da1c02bdcbd&mid=9&cid=81&param=pn%3D7%26mid%3D9%26cid%3D81%26key%3D" target="_blank" class="link blue hover-dark-blue">NTU EAT Campus Delivery Robot – News Coverage</a></li>
 </ul>
 </div>
+</div>
 
-<!-- Two videos -->
-<div class="flex flex-column flex-row-l items-center mt-auto">
-<div class="w-100 w-50-l pr2-l mb3 mb0-l" style="pointer-events: none;">
-<div class="aspect-ratio aspect-ratio--16x9 br2 overflow-hidden shadow-3">
-<iframe src="https://www.youtube.com/embed/j1kVTjPE8es?autoplay=1&mute=1&loop=1&playlist=j1kVTjPE8es&controls=0&modestbranding=1&rel=0&playsinline=1" class="aspect-ratio--object" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="ntu-eat-scenes">
+<section class="ntu-eat-scene" aria-labelledby="ntu-eat-outdoor">
+<div class="ntu-eat-scene-heading">
+<span class="ntu-eat-number" aria-hidden="true">01</span>
+<h4 id="ntu-eat-outdoor">Outdoors<span>Autonomous mobility on the road</span></h4>
 </div>
+<div class="ntu-eat-media">
+<iframe aria-label="NTU EAT outdoor road scene video" src="https://www.youtube.com/embed/j1kVTjPE8es?autoplay=0&mute=1&loop=1&playlist=j1kVTjPE8es&controls=1&rel=0&playsinline=1" width="560" height="315" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<div class="w-100 w-50-l pl2-l" style="pointer-events: none;">
-<div class="aspect-ratio aspect-ratio--16x9 br2 overflow-hidden shadow-3">
-<iframe src="https://www.youtube.com/embed/lImeZVryTdc?autoplay=1&mute=1&loop=1&playlist=lImeZVryTdc&controls=0&modestbranding=1&rel=0&playsinline=1" class="aspect-ratio--object" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p class="ntu-eat-feature-label">Project features</p>
+<ul class="ntu-eat-features">
+<li>Outdoor autonomous navigation</li>
+<li>Multi-sensor fusion localization</li>
+<li>Dynamic obstacle avoidance</li>
+</ul>
+<a class="ntu-eat-watch" href="https://www.youtube.com/watch?v=j1kVTjPE8es" target="_blank" rel="noopener noreferrer">Watch the outdoor video on YouTube <span aria-hidden="true">↗</span></a>
+</section>
+<section class="ntu-eat-scene" aria-labelledby="ntu-eat-indoor">
+<div class="ntu-eat-scene-heading">
+<span class="ntu-eat-number" aria-hidden="true">02</span>
+<h4 id="ntu-eat-indoor">Indoors<span>Elevator integration &amp; cross-floor delivery</span></h4>
 </div>
+<div class="ntu-eat-media">
+<iframe aria-label="NTU EAT indoor elevator scene video" src="https://www.youtube.com/embed/lImeZVryTdc?autoplay=0&mute=1&loop=1&playlist=lImeZVryTdc&controls=1&rel=0&playsinline=1" width="560" height="315" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+<p class="ntu-eat-feature-label">Project features</p>
+<ul class="ntu-eat-features">
+<li>Indoor autonomous navigation</li>
+<li>Smart elevator integration</li>
+<li>Cross-floor delivery</li>
+</ul>
+<a class="ntu-eat-watch" href="https://www.youtube.com/watch?v=lImeZVryTdc" target="_blank" rel="noopener noreferrer">Watch the indoor video on YouTube <span aria-hidden="true">↗</span></a>
+</section>
 </div>
+<p class="ntu-eat-source">Features are drawn from the project overview; videos provide scene references.</p>
 </article>
 </div>
 
