@@ -2,6 +2,62 @@
 title: "NTU Intelligent Vehicle and Mechatronics Laboratory"
 description: "Explore autonomous driving, perception, localization, vehicle control and multi-vehicle coordination at NTU's Intelligent Vehicle and Mechatronics Laboratory."
 ---
+<!-- Latest news: extensible event announcement block -->
+<section class="news-section" aria-labelledby="news-section-title">
+<header class="news-section-heading">
+<div>
+<p class="news-eyebrow">Featured announcement</p>
+<h2 id="news-section-title">News &amp; Events</h2>
+</div>
+</header>
+<div class="news-grid">
+<figure class="news-poster">
+<div class="news-poster-frame">
+<img src="/ivlab-web/events/physical-ai-robotics-symposium-2026-poster.jpg" width="1075" height="1521" alt="Official poster for International Physical AI &amp; Robotics Symposium 2026" loading="lazy">
+</div>
+<figcaption>Official event poster</figcaption>
+</figure>
+<article class="news-copy" aria-labelledby="news-event-title">
+<header class="news-copy-heading">
+<p class="news-event-label">International Academic Symposium</p>
+<h3 id="news-event-title">International Physical AI &amp; Robotics Symposium 2026</h3>
+<p class="news-event-original">Physical AI · Robotics · Autonomous Systems</p>
+</header>
+<div class="news-intro">
+<p>This symposium focuses on Physical AI and intelligent robotics, exploring how artificial intelligence extends beyond software computation into perception, decision-making, and action in the real world.</p>
+<p>Researchers and leaders from academia, industry, and healthcare will exchange work on autonomous systems, robot control, AI infrastructure, and smart healthcare, while discussing the challenges and directions of deploying Physical AI beyond the laboratory.</p>
+</div>
+<dl class="news-details">
+<div><dt>Dates</dt><dd>December 3–4, 2026</dd></div>
+<div><dt>Venue</dt><dd>Asia University Museum of Modern Art, Taichung, Taiwan</dd></div>
+<div><dt>Registration deadline</dt><dd>November 19, 2026</dd></div>
+</dl>
+<div class="news-keynote">
+<div class="news-keynote-top">
+<p class="news-label">INVITED KEYNOTE</p>
+<p class="news-keynote-meta">December 4, 2026 · 10:00–11:00</p>
+</div>
+<div class="news-keynote-main">
+<div>
+<p class="news-keynote-name">Prof. Kang Li</p>
+<p class="news-keynote-lab">Director of UxV Research Center, National Taiwan University</p>
+</div>
+<div class="news-keynote-title-wrap">
+<p class="news-keynote-title-label">Keynote title</p>
+<p class="news-keynote-title">Secured Physical &amp; Edge-AI System on Chip (SOC) for All-Domain Autonomous Systems</p>
+</div>
+</div>
+</div>
+<div class="news-topics" aria-label="Event topics"><span>Physical AI</span><span>Robotics</span><span>Autonomous Systems</span><span>AI Infrastructure</span><span>Smart Healthcare</span></div>
+<div class="news-actions">
+<a class="news-action news-action-primary" href="https://forms.gle/FNF5WjAoZdbxA84e9" target="_blank" rel="noopener noreferrer">Register now <span aria-hidden="true">↗</span></a>
+<a class="news-action" href="/ivlab-web/events/international-physical-ai-robotics-symposium-2026-program.pdf" target="_blank" rel="noopener noreferrer">View full program PDF <span aria-hidden="true">↗</span></a>
+<a class="news-action" href="https://cmuh.org.tw/NewsInfo/NewsArticle?no=10204" target="_blank" rel="noopener noreferrer">Organizer announcement <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+</div>
+</section>
+
 <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">🌟 Highlight Achievements</h2>
 
 <div class="flex flex-wrap justify-between">

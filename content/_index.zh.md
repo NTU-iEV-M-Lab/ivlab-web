@@ -2,6 +2,62 @@
 title: "國立臺灣大學 智慧載具與機電整合實驗室"
 description: "國立臺灣大學智慧載具與機電整合實驗室，研究自動駕駛、多模態感知、定位導航、車輛控制與異質無人載具協作。瀏覽研究方向、團隊成員、學術論文與研究計畫。"
 ---
+<!-- 最新消息：可擴充的活動公告區塊 -->
+<section class="news-section" aria-labelledby="news-section-title">
+<header class="news-section-heading">
+<div>
+<p class="news-eyebrow">Featured announcement</p>
+<h2 id="news-section-title">最新消息 <span>News &amp; Events</span></h2>
+</div>
+</header>
+<div class="news-grid">
+<figure class="news-poster">
+<div class="news-poster-frame">
+<img src="/ivlab-web/events/physical-ai-robotics-symposium-2026-poster.jpg" width="1075" height="1521" alt="2026 國際物理人工智慧與機器人研討會官方海報" loading="lazy">
+</div>
+<figcaption>官方活動海報</figcaption>
+</figure>
+<article class="news-copy" aria-labelledby="news-event-title">
+<header class="news-copy-heading">
+<p class="news-event-label">International Academic Symposium</p>
+<h3 id="news-event-title">2026 國際物理人工智慧與機器人研討會</h3>
+<p class="news-event-original">International Physical AI &amp; Robotics Symposium 2026</p>
+</header>
+<div class="news-intro">
+<p>本研討會聚焦實體人工智慧（Physical AI）與智慧機器人技術，探討人工智慧如何從軟體運算延伸至真實世界的感知、決策與行動。</p>
+<p>活動邀集國內外學術界、產業界及醫療領域專家，交流自主系統、機器人控制、AI 基礎設施與智慧醫療等研究及應用成果，並探討 Physical AI 從技術研發走向實際部署所面臨的挑戰與發展方向。</p>
+</div>
+<dl class="news-details">
+<div><dt>活動日期</dt><dd>2026 年 12 月 3–4 日</dd></div>
+<div><dt>活動地點</dt><dd>亞洲大學現代美術館，臺中</dd></div>
+<div><dt>報名截止</dt><dd>2026 年 11 月 19 日</dd></div>
+</dl>
+<div class="news-keynote">
+<div class="news-keynote-top">
+<p class="news-label">本實驗室受邀講者 / INVITED KEYNOTE</p>
+<p class="news-keynote-meta">2026 年 12 月 4 日 · 10:00–11:00</p>
+</div>
+<div class="news-keynote-main">
+<div>
+<p class="news-keynote-name">李綱教授 <span>/ Prof. Kang Li</span></p>
+<p class="news-keynote-lab">國立臺灣大學無人載具研發設計中心主任</p>
+</div>
+<div class="news-keynote-title-wrap">
+<p class="news-keynote-title-label">專題演講</p>
+<p class="news-keynote-title">Secured Physical &amp; Edge-AI System on Chip (SOC) for All-Domain Autonomous Systems</p>
+</div>
+</div>
+</div>
+<div class="news-topics" aria-label="活動主題"><span>Physical AI</span><span>Robotics</span><span>Autonomous Systems</span><span>AI Infrastructure</span><span>智慧醫療</span></div>
+<div class="news-actions">
+<a class="news-action news-action-primary" href="https://forms.gle/FNF5WjAoZdbxA84e9" target="_blank" rel="noopener noreferrer">立即報名 <span aria-hidden="true">↗</span></a>
+<a class="news-action" href="/ivlab-web/events/international-physical-ai-robotics-symposium-2026-program.pdf" target="_blank" rel="noopener noreferrer">查看完整議程 PDF <span aria-hidden="true">↗</span></a>
+<a class="news-action" href="https://cmuh.org.tw/NewsInfo/NewsArticle?no=10204" target="_blank" rel="noopener noreferrer">主辦相關公告 <span aria-hidden="true">↗</span></a>
+</div>
+</article>
+</div>
+</section>
+
 <!-- 現代化卡片排版：實驗室亮點成果 -->
 <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">🌟 實驗室亮點成果 (Highlight Achievements)</h2>
 

@@ -100,6 +100,10 @@
     // Alternating directions gently express the layout. iframe ancestors are always excluded.
     onView('.page-home .page-content article > div:first-child', index => ({ x: index % 2 ? -18 : 18, distance: 14, opacity: 0.8 }));
     onView('.page-home .card-carousel', { x: -18, distance: 20, delay: 0.06, opacity: 0.85 });
+    onView('.page-home .news-section-heading', { distance: 12, opacity: 0.86 });
+    onView('.page-home .news-poster', { x: -16, distance: 18, delay: 0.05, opacity: 0.86 });
+    onView('.page-home .news-copy', { x: 16, distance: 18, delay: 0.1, opacity: 0.86 });
+    onView('.page-home .news-details > div, .page-home .news-topics span', index => ({ delay: (index % 5) * 0.035, distance: 6, duration: 0.42, opacity: 0.82 }));
     onView('.page-professor .page-content > div', index => ({ delay: index * 0.05, distance: 16, opacity: 0.85 }));
     onView('.page-research .page-content .pr4-l > div', index => ({ x: index % 2 ? 14 : -14, distance: 14, opacity: 0.85 }));
     onView('.page-research .pr4-l + div > .flex > div, .page-research .pr4-l + div > .mb4, .page-research .pr4-l + div > div:last-child', index => ({ x: index % 2 ? 16 : -16, distance: 20, delay: (index % 2) * 0.08, opacity: 0.85 }));
