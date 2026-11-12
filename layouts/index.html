@@ -2,23 +2,22 @@
 <section class="research-hero" aria-labelledby="hero-title">
   <div class="site-container hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">{{ .Site.Params.description }}</p>
+      <div class="hero-identity">
+        <p class="eyebrow">{{ .Site.Params.description }}</p>
+      </div>
       <h1 id="hero-title">{{ if eq .Lang "zh" }}{{ $parts := split .Site.Title " " }}<span class="hero-institution">{{ index $parts 0 }}</span><span class="hero-lab-name"><span class="hero-title-line">{{ replace (delimit (after 1 $parts) " ") "與" "與</span><span class=\"hero-title-line\">" | safeHTML }}</span></span>{{ else }}{{ $parts := split .Site.Title " and " }}<span class="hero-title-line">{{ index $parts 0 }}</span>{{ if gt (len $parts) 1 }} <span class="hero-title-line">and {{ delimit (after 1 $parts) " and " }}</span>{{ end }}{{ end }}</h1>
+      <p class="hero-statement">{{ if eq .Lang "zh" }}從感知、定位導航到車輛控制，探索智慧載具與異質無人系統的機電整合。{{ else }}Exploring intelligent vehicles and heterogeneous unmanned systems through perception, localization, navigation, and vehicle control.{{ end }}</p>
+      <div class="hero-focus">
+        <span class="hero-focus-label">{{ if eq .Lang "zh" }}研究焦點{{ else }}Research focus{{ end }}</span>
+        <ul>
+          {{ if eq .Lang "zh" }}<li>自動駕駛</li><li>多模態感知</li><li>定位導航</li><li>車輛控制</li>{{ else }}<li>Autonomous driving</li><li>Multimodal perception</li><li>Localization &amp; navigation</li><li>Vehicle control</li>{{ end }}
+        </ul>
+      </div>
       <div class="hero-links">
         {{ range .Site.Menus.main }}{{ if or (eq .Weight 5) (eq .Weight 6) }}
         <a href="{{ .URL }}">{{ .Name }} <span aria-hidden="true">↗</span></a>
         {{ end }}{{ end }}
       </div>
-    </div>
-    <div class="hero-media">
-      <figure class="hero-photo">
-        <img src="{{ "images/dubi_world_challenge2.jpg" | relURL }}" width="1568" height="1046" alt="Dubai Challenge 2023" fetchpriority="high">
-        <figcaption>Dubai Challenge 2023</figcaption>
-      </figure>
-      <div class="hero-photo-secondary" aria-hidden="true">
-        <img src="{{ "images/dubi2021.jpg" | relURL }}" width="1200" height="885" alt="" loading="lazy">
-      </div>
-      <span class="hero-cross" aria-hidden="true">+</span>
     </div>
   </div>
   <div class="hero-bottom site-container" aria-hidden="true"><span></span><span>↓</span></div>
