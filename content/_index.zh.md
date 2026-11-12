@@ -96,7 +96,7 @@ description: "國立臺灣大學智慧載具與機電整合實驗室，研究自
 <div class="card-dots" id="dDots"></div>
 </div>
 </div>
-<div class="w-100 w-50-l pl2-l" style="pointer-events: none;">
+<div class="w-100 w-50-l pl2-l">
 <div class="aspect-ratio aspect-ratio--16x9 br2 overflow-hidden shadow-3">
 <iframe src="https://www.youtube.com/embed/GQv2ITTWaR0?autoplay=1&mute=1&loop=1&playlist=GQv2ITTWaR0&controls=0&modestbranding=1&rel=0&playsinline=1" class="aspect-ratio--object" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>

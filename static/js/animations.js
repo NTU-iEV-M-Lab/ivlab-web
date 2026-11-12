@@ -86,8 +86,8 @@
       ['.hero-copy .eyebrow', { duration: 0.5, distance: 10, opacity: 0.85 }],
       ['.hero-institution', { duration: 0.55, delay: 0.04, distance: 12 }],
       ['.hero-links', { duration: 0.6, delay: 0.18, distance: 12, opacity: 0.85 }],
-      ['.hero-photo', { duration: 0.9, delay: 0.16, distance: 26, opacity: 0.85 }],
-      ['.hero-photo-secondary', { duration: 0.8, delay: 0.27, distance: 18, opacity: 0.85 }],
+      ['.hero-statement', { duration: 0.65, delay: 0.12, distance: 16, opacity: 0.85 }],
+      ['.hero-focus', { duration: 0.65, delay: 0.18, distance: 12, opacity: 0.85 }],
       ['.page-heading h1', { duration: 0.6, distance: 16, opacity: 0.8 }],
       ['.heading-rule', { duration: 0.55, delay: 0.1, distance: 0, x: -12 }]
     ].forEach(([selector, options]) => {
