@@ -198,6 +198,87 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
 .news-action:hover span { transform: translate(2px,-2px); }
 .news-action-primary { color: var(--night); border-color: var(--accent); background: var(--accent); }
 .news-action-primary:hover { color: var(--night); border-color: var(--accent); background: #c1e98d; }
+
+/* SAVLink: a video-led homepage feature and a separate research-vision entry. */
+.page-home .savlink-focus {
+  margin-block-end: clamp(54px, 7vw, 86px);
+  padding: clamp(20px, 3vw, 40px);
+  border-top: 2px solid var(--teal);
+  background: #e7ece4;
+}
+.savlink-focus h2 {
+  margin: 0 0 clamp(20px, 2.5vw, 34px);
+  padding-bottom: 14px;
+}
+.savlink-focus-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.36fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(24px, 3.3vw, 48px);
+}
+.savlink-player {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--night);
+}
+.savlink-player iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.savlink-player iframe:focus-visible { outline-offset: -4px; }
+.savlink-video-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: var(--type-caption);
+}
+.savlink-focus-copy h3 { margin-bottom: 14px; }
+.savlink-focus-copy p { line-height: 1.65; }
+.page-content .savlink-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 8px 14px;
+  background: var(--night);
+  color: white;
+  font-weight: var(--weight-heading);
+  line-height: var(--leading-ui);
+  text-decoration: none;
+}
+.page-content .savlink-cta:hover { background: var(--night-2); color: var(--accent); }
+.savlink-project .savlink-project-title { margin-bottom: 14px; text-wrap: pretty; }
+:lang(en) .savlink-project-title {
+  font-size: clamp(1.125rem, 1.55vw, 1.4rem);
+}
+.savlink-project-background { line-height: 1.65; }
+.savlink-project h4 { margin-top: clamp(24px, 3vw, 36px); margin-bottom: 12px; }
+.savlink-topics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(24px, 4vw, 48px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.savlink-topics li {
+  padding: 14px 0 16px;
+  border-top: 1px solid var(--line);
+}
+.savlink-topics strong { display: block; line-height: 1.4; }
+.savlink-topics p { margin: 6px 0 0; color: var(--muted); line-height: 1.65; }
+@media (max-width: 1024px) {
+  .savlink-topics { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 780px) {
+  .savlink-focus-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* NTU EAT: one overview above two equal scene studies, with uncropped players. */
 .page-home .page-content > .flex > article.ntu-eat { display: block; padding: clamp(24px,4vw,48px); background: var(--night); color: #e6eee9; }
 .page-home .ntu-eat .ntu-eat-intro { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.35fr); gap: 48px; padding: 0 0 36px; border-bottom: 1px solid #ffffff35; }

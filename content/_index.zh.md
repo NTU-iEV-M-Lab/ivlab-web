@@ -58,6 +58,24 @@ description: "國立臺灣大學智慧載具與機電整合實驗室，研究自
 </div>
 </section>
 
+<section class="savlink-focus" aria-labelledby="savlink-focus-heading">
+<h2 id="savlink-focus-heading">未來研究焦點</h2>
+<div class="savlink-focus-grid">
+<div class="savlink-vision">
+<div class="savlink-player">
+<iframe src="https://www.youtube.com/embed/UeHP9SrSc1M" aria-label="SAVLink 研究願景影片" width="560" height="315" allow="encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<a class="savlink-video-link" href="https://youtu.be/UeHP9SrSc1M">在 YouTube 觀看研究願景影片 <span aria-hidden="true">↗</span></a>
+</div>
+<div class="savlink-focus-copy">
+<h3>SAVLink｜AI 驅動的異質無人載具群控與協同系統</h3>
+<p>本實驗室正推動 SAVLink 異質無人載具群控技術研究，探索無人機與自主移動機器人在通訊受限環境下的智慧協同。研究結合大型語言模型、任務語意通訊、分層群控與雙鏈路通訊管理，讓不同載具能依據共同任務目標自主分工，並依通訊條件調整協作方式。</p>
+<p>未來將從軟體模擬、硬體在環逐步推進至實體載具驗證，探索其在搜救、災害勘查及自主巡檢等情境中的應用潛力。</p>
+<a class="savlink-cta" href="{{< relref "/projects" >}}#savlink">探索研究計畫 <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+
 <!-- 現代化卡片排版：實驗室亮點成果 -->
 <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">🌟 實驗室亮點成果 (Highlight Achievements)</h2>
 
@@ -167,7 +185,7 @@ description: "國立臺灣大學智慧載具與機電整合實驗室，研究自
 <div class="w-100 w-50-l lh-copy f4">
 <p class="mb3 mt0"><strong>指導教授：</strong> 李綱 教授 (Prof. Kang Li)</p>
 <p class="mb3"><strong>📧 電子信箱：</strong> <a href="mailto:kangli@ntu.edu.tw" class="link blue hover-dark-blue">kangli@ntu.edu.tw</a></p>
-<p class="mb0"><strong>📞 聯絡電話：</strong> +886 2-3366-4516</p>
+<p class="mb0"><strong>📞 實驗室電話：</strong> <a href="tel:+886233664497">+886 2-3366-4497</a></p>
 </div>
 
 <!-- 右欄：實體位置 (放大至 f4) -->
