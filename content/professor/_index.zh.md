@@ -17,7 +17,7 @@ description: "認識國立臺灣大學機械工程學系李綱博士的學經歷
 <li class="mb1"><strong>電子信箱：</strong> <a href="mailto:kangli@ntu.edu.tw" class="link blue">kangli@ntu.edu.tw</a></li>
 <li class="mb1"><strong>辦公室：</strong> 國立臺灣大學機械館 506 室</li>
 <li class="mb1"><strong>實驗室：</strong> 國立臺灣大學機械館 417 室</li>
-<li class="mb1"><strong>電話：</strong> +886 02-3366-4516</li>
+<li class="mb1"><strong>教授聯絡電話：</strong> +886 02-3366-4516</li>
 </ul>
 </div>
 </div>

@@ -4,6 +4,32 @@ description: "Browse active and completed NTU lab projects on autonomous navigat
 ---
 <div class="mw9 center w-100">
 
+<section class="project-category savlink-project" aria-labelledby="savlink">
+<h2 id="savlink">SAVLink Research Vision</h2>
+<h3 class="savlink-project-title">Development of a Heterogeneous Unmanned Vehicle Fleet Control System and the Task Semantic Communication Protocol SAVLink under Communication Constraints</h3>
+<p class="savlink-project-background">The lab’s earlier SDN research focuses on networked UAV swarm control and SIL/HIL simulation. SAVLink extends this line of research to mixed aerial and ground fleets, investigating how they can keep a mission going when bandwidth is limited or connectivity is intermittent.</p>
+<h4>Core Research Topics</h4>
+<ul class="savlink-topics">
+<li>
+<strong>Heterogeneous Fleet Coordination &amp; Hierarchical Mission Management</strong>
+<p>Study how fleet-level task allocation can operate separately from onboard navigation and control, with interfaces such as ROS 2 and MAVLink connecting UAVs and autonomous mobile robots.</p>
+</li>
+<li>
+<strong>AI-Assisted Mission Interpretation &amp; SAVLink Semantic Communication</strong>
+<p>Explore how large language models can interpret mission intent and how SAVLink can represent mission goals and coordination information for different vehicles to exchange and interpret.</p>
+</li>
+<li>
+<strong>Communication-Aware Coordination, Dual-Link Management &amp; Mobile Relaying</strong>
+<p>Study how fleets can adapt information exchange and coordination to link conditions, and evaluate how dual-link management and mobile relaying can help maintain mission continuity.</p>
+</li>
+<li>
+<strong>SIL/HIL Simulation &amp; UAV/AMR Physical Validation</strong>
+<p>Plan to test task allocation and communication behavior in software-in-the-loop (SIL), check control interfaces in hardware-in-the-loop (HIL), then integrate physical vehicles and validate aerial–ground coordination.</p>
+</li>
+</ul>
+<a class="savlink-video-link" href="https://youtu.be/UeHP9SrSc1M">Watch the research vision video on YouTube <span aria-hidden="true">↗</span></a>
+</section>
+
 <!-- 1. NSTC Projects -->
 <section class="project-category" aria-labelledby="section-1">
 <h2 id="section-1" class="f2 fw6 mb4 mt2 pb2 bb b--black-10 dark-blue">🔬 Active NSTC Projects</h2>

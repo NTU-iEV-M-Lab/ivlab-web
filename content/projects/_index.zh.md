@@ -4,6 +4,32 @@ description: "瀏覽國立臺灣大學智慧載具與機電整合實驗室的執
 ---
 <div class="mw9 center w-100">
 
+<section class="project-category savlink-project" aria-labelledby="savlink">
+<h2 id="savlink">SAVLink 研究願景</h2>
+<h3 class="savlink-project-title">通訊受限下異質無人載具群控系統與任務語意通訊協定 SAVLink 之研發</h3>
+<p class="savlink-project-background">既有的 SDN 群控研究聚焦無人機群的網路控制與 SIL／HIL 模擬驗證。SAVLink 延續這項技術方向，將研究範圍擴展至空地異質載具，探討任務如何在頻寬不足或連線間歇時接續執行。</p>
+<h4>核心研究主題</h4>
+<ul class="savlink-topics">
+<li>
+<strong>異質無人載具群控與分層任務協同</strong>
+<p>研究如何分開處理機隊層級的任務分配與各載具的自主導航和控制，並透過 ROS 2、MAVLink 等介面串接無人機與自主移動機器人。</p>
+</li>
+<li>
+<strong>AI 任務意圖理解與 SAVLink 語意通訊</strong>
+<p>探索以大型語言模型解讀任務意圖，並以 SAVLink 表達任務目標與協作所需的資訊，供不同載具交換與理解。</p>
+</li>
+<li>
+<strong>通訊感知協作、雙鏈路管理與移動中繼</strong>
+<p>研究機隊如何依連線狀態調整資訊交換與協作方式，並評估雙鏈路管理與移動中繼對維持任務接續的作用。</p>
+</li>
+<li>
+<strong>SIL／HIL 模擬與 UAV／AMR 實機驗證</strong>
+<p>規劃先以軟體在環（SIL）測試任務分配與通訊行為，再以硬體在環（HIL）驗證控制介面，最後逐步整合實機並驗證空地協同。</p>
+</li>
+</ul>
+<a class="savlink-video-link" href="https://youtu.be/UeHP9SrSc1M">在 YouTube 觀看研究願景影片 <span aria-hidden="true">↗</span></a>
+</section>
+
 <!-- 1. 國科會計畫 -->
 <section class="project-category" aria-labelledby="section-1">
 <h2 id="section-1" class="f2 fw6 mb4 mt2 pb2 bb b--black-10 dark-blue">🔬 執行中國科會計畫</h2>

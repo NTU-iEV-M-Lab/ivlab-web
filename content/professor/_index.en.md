@@ -17,7 +17,7 @@ description: "Learn about Dr. Kang Li, Associate Professor at NTU, including his
 <li class="mb1"><strong>Email:</strong> <a href="mailto:kangli@ntu.edu.tw" class="link blue">kangli@ntu.edu.tw</a></li>
 <li class="mb1"><strong>Office:</strong> Room 506, Department of Mechanical Engineering, NTU</li>
 <li class="mb1"><strong>Laboratory:</strong> Room 417, Department of Mechanical Engineering, NTU</li>
-<li class="mb1"><strong>Phone:</strong> +886 02-3366-4516</li>
+<li class="mb1"><strong>Professor's Phone:</strong> +886 02-3366-4516</li>
 </ul>
 </div>
 </div>

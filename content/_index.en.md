@@ -58,6 +58,25 @@ description: "Explore autonomous driving, perception, localization, vehicle cont
 </div>
 </section>
 
+<section class="savlink-focus" aria-labelledby="savlink-focus-heading">
+<h2 id="savlink-focus-heading">Future Research Focus</h2>
+<div class="savlink-focus-grid">
+<div class="savlink-vision">
+<div class="savlink-player">
+<iframe src="https://www.youtube.com/embed/UeHP9SrSc1M" aria-label="SAVLink research vision video" width="560" height="315" allow="encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<a class="savlink-video-link" href="https://youtu.be/UeHP9SrSc1M">Watch the research vision video on YouTube <span aria-hidden="true">↗</span></a>
+</div>
+<div class="savlink-focus-copy">
+<h3>SAVLink | AI-Driven Heterogeneous Unmanned Vehicle Coordination</h3>
+<p>Our laboratory is advancing research on SAVLink, a task-oriented coordination framework for heterogeneous unmanned vehicles operating under communication constraints.</p>
+<p>The research integrates large language models, semantic mission communication, hierarchical fleet coordination, and dual-link communication management, enabling aerial and ground robots to coordinate tasks while adapting to limited bandwidth and intermittent connectivity.</p>
+<p>Future work will progressively advance from software simulation and hardware-in-the-loop testing to physical multi-robot validation, exploring potential applications in search and rescue, disaster assessment, and autonomous inspection.</p>
+<a class="savlink-cta" href="{{< relref "/projects" >}}#savlink">Explore the Research <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+
 <h2 class="f2 fw6 mb4 mt5 pb2 bb b--black-10 dark-gray">🌟 Highlight Achievements</h2>
 
 <div class="flex flex-wrap justify-between">
@@ -163,7 +182,7 @@ NTU EAT is an Autonomous Mobile Robot (AMR) developed by the lab, integrating mu
 <div class="w-100 w-50-l lh-copy f4">
 <p class="mb3 mt0"><strong>Principal Investigator:</strong> Prof. Kang Li</p>
 <p class="mb3"><strong>📧 Email:</strong> <a href="mailto:kangli@ntu.edu.tw" class="link blue hover-dark-blue">kangli@ntu.edu.tw</a></p>
-<p class="mb0"><strong>📞 Phone:</strong> +886 2-3366-4516</p>
+<p class="mb0"><strong>📞 Lab phone:</strong> <a href="tel:+886233664497">+886 2-3366-4497</a></p>
 </div>
 
 <div class="w-100 w-50-l lh-copy f4 mt4 mt0-l bl-l b--black-10 pl4-l">
