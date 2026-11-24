@@ -46,8 +46,8 @@ body.lab-site { margin: 0; background: var(--canvas); color: var(--ink); font: v
 html:not(.js) .site-header { position: static; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 22px; min-height: 86px; padding-block: 12px; }
 .site-brand { display: flex; align-items: center; min-width: 0; gap: 14px; color: #fff; text-decoration: none; flex: 0 1 334px; }
-.brand-logo { flex: 0 0 88px; display: block; }
-.brand-logo img { width: 100%; height: auto; display: block; }
+.brand-logo { --brand-logo-height: 36px; flex: none; display: block; }
+.brand-logo img { display: block; width: auto; height: var(--brand-logo-height); }
 .brand-institution { display: block; font-size: var(--type-small); line-height: var(--leading-ui); color: #bfd1cc; letter-spacing: .04em; margin-bottom: 3px; }
 .brand-name { display: block; }
 .brand-title { font-size: var(--type-brand); line-height: var(--leading-ui); font-weight: var(--weight-medium); letter-spacing: var(--tracking-ui); max-width: 235px; text-wrap: balance; }
@@ -450,7 +450,7 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
   .site-container { width: calc(100% - 64px); }
   .header-inner { gap: 18px; }
   .site-brand { flex-basis: 320px; gap: 12px; }
-  .brand-logo { flex-basis: 84px; }
+  .brand-logo { --brand-logo-height: 30px; }
   .site-menu { gap: 18px; }
   .hero-grid { gap: 32px; }
   .hero-links { gap: 16px; }
@@ -468,7 +468,6 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
 @media (max-width: 1180px) {
   .header-inner { min-height: 86px; padding-block: 12px; }
   .site-brand { flex-basis: 550px; }
-  .brand-logo { flex-basis: 84px; }
   .brand-title { max-width: 350px; }
   html[lang="en"] .brand-title { max-width: 320px; }
   .js .menu-toggle { display: flex; }
@@ -548,7 +547,7 @@ html[lang="en"] .research-hero h1 { font-size: var(--type-hero-en); }
   .site-container { width: calc(100% - 32px); }
   .header-inner { gap: 8px; min-height: 86px; padding-block: 12px; }
   .site-brand { flex: 1 1 auto; flex-basis: auto; gap: 10px; }
-  .brand-logo { flex-basis: 52px; }
+  .brand-logo { --brand-logo-height: 20px; }
   .brand-title { max-width: 180px; }
   .header-actions { min-width: 0; flex-shrink: 0; gap: 10px; }
   .language-switch { padding-inline: 8px; font-size: var(--type-caption); }

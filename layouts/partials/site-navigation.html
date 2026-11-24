@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="site-container header-inner">
     <a class="site-brand" href="{{ .Site.Home.RelPermalink }}">
-      <span class="brand-logo"><img src="{{ "images/logo-lab.png" | relURL }}" width="1028" height="369" alt="Lab Logo"></span>
+      <span class="brand-logo"><img src="{{ "images/logo-lab-white.png" | relURL }}" width="2172" height="724" alt=""></span>
       <span class="brand-title">{{ if eq .Lang "zh" }}{{ $parts := split .Site.Title " " }}<span class="brand-institution">{{ index $parts 0 }}</span><span class="brand-name">{{ delimit (after 1 $parts) " " }}</span>{{ else }}{{ .Site.Title }}{{ end }}</span>
     </a>
     <div class="header-actions">
